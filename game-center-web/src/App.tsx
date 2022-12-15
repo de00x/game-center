@@ -1,7 +1,6 @@
+import { Header } from './components/Header'
 import { FC } from 'react'
 
-const App: FC = (): JSX.Element => {
-  return <div>f</div>
-}
+const App: FC = (): JSX.Element => <Header />
 
 export default App
