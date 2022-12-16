@@ -1,0 +1,84 @@
+.platformsContainer {
+  margin-top: 2rem;
+  letter-spacing: 0.5px;
+}
+.platformsHeaderText {
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.25s color ease-in-out;
+  &:hover {
+    color: rgb(45, 45, 45);
+  }
+}
+.platformsItem {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  &:first-child {
+    margin-top: 1rem;
+  }
+  & svg {
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+    transition: 0.25s fill ease-in-out;
+  }
+  &:hover {
+    & svg {
+      fill: #000;
+    }
+    .platformsSVG {
+      background-color: #fff;
+    }
+  }
+}
+.platformsSVG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  background-color: rgb(62, 61, 61);
+  transition: 0.25s background-color ease-in-out;
+}
+.platformsItemShowAll {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  cursor: pointer;
+  color: rgb(96, 96, 96);
+  & svg {
+    width: 18px;
+    height: 18px;
+    fill: rgb(96, 96, 96);
+    transition: 0.25s fill ease-in-out;
+  }
+  &:hover {
+    & svg {
+      fill: #000;
+    }
+    .platformsSVGShowAll {
+      background-color: rgb(197, 190, 190);
+    }
+  }
+}
+.platformsSVGShowAll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  transform: rotate(90deg);
+  background-color: rgb(34, 33, 33);
+  transition: 0.25s background-color ease-in-out;
+}
+.platformsSVGShowAllShow {
+  transform: rotate(-90deg);
+}

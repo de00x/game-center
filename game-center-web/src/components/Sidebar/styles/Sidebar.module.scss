@@ -1,0 +1,22 @@
+.sidebarContainer {
+  width: 17rem;
+  min-width: 17rem;
+  padding: 4rem 1rem 3rem 3rem;
+  color: white;
+}
+.homePage,
+.reviewsPage,
+.allGamesPage {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.25s color ease-in-out;
+  &:hover {
+    color: rgb(45, 45, 45);
+  }
+}
+.reviewsPage,
+.allGamesPage {
+  margin-top: 2rem;
+}

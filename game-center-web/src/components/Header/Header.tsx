@@ -1,20 +1,21 @@
 import { ReactComponent as Search } from './img/search.svg'
 import { CSSTransition } from 'react-transition-group'
-import { FC, useCallback, useState } from 'react'
+import { FC, useState } from 'react'
 import { ratedImg } from './img/img'
 import './styles/index.scss'
 import styles from './styles/Header.module.scss'
 
+const otherMenuPoints = [
+  'Leaderboard',
+  'Discord',
+  '@rawgtheworld',
+  '@rawgthepichures',
+  'Get an API key',
+  'Sitemap',
+]
+
 export const Header: FC = (): JSX.Element => {
   const [isOpenOtherFlyMenu, setIsOpenOtherFlyMenu] = useState(false)
-
-  const openFlyOtherMenu = useCallback(() => {
-    setIsOpenOtherFlyMenu(true)
-  }, [])
-  // const openFlyOtherMenu = () => {
-  //   setIsOpenOtherFlyMenu(true)
-  // }
-  console.log('123')
 
   return (
     <div className={styles.headerContainer}>
@@ -33,7 +34,10 @@ export const Header: FC = (): JSX.Element => {
       <div className={styles.headerLogIn}>LOG IN</div>
       <div className={styles.headerSignUp}>SIGN UP</div>
       <div className={styles.headerApi}>API</div>
-      <div className={styles.headerOtherMenuContainer} onMouseOver={openFlyOtherMenu}>
+      <div
+        className={styles.headerOtherMenuContainer}
+        onMouseOver={() => setIsOpenOtherFlyMenu(true)}
+      >
         <CSSTransition
           in={isOpenOtherFlyMenu}
           classNames="otherFlyMenu"
@@ -41,12 +45,9 @@ export const Header: FC = (): JSX.Element => {
           unmountOnExit
         >
           <div className={styles.headerOtherMenu} onMouseLeave={() => setIsOpenOtherFlyMenu(false)}>
-            <div>Leaderboard</div>
-            <div>Discord</div>
-            <div>@rawgtheworld</div>
-            <div>@rawgthepichures</div>
-            <div>Get an API key</div>
-            <div>Sitemap</div>
+            {otherMenuPoints.map((point) => (
+              <div key={point}>{point}</div>
+            ))}
           </div>
         </CSSTransition>
         ...

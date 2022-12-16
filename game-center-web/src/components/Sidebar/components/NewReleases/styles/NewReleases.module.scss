@@ -1,0 +1,42 @@
+.newReleasesContainer {
+  margin-top: 2rem;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.newReleasesItem {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  cursor: pointer;
+  &:first-child {
+    margin-top: 1rem;
+  }
+  &:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  & svg {
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+    transition: 0.25s fill ease-in-out;
+  }
+  &:hover {
+    & svg {
+      fill: #000;
+    }
+    .newReleasesSVG {
+      background-color: #fff;
+    }
+  }
+}
+.newReleasesSVG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  background-color: rgb(62, 61, 61);
+  transition: 0.25s background-color ease-in-out;
+}

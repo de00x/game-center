@@ -1,0 +1,8 @@
+export const AdventureImg = 'https://i.ibb.co/YbW4F8p/Adventure-Img.png'
+export const StrategyImg = 'https://i.ibb.co/yfTqMs5/Strategy-Img.png'
+export const ShooterImg = 'https://i.ibb.co/h71LX7c/Shooter-Img.png'
+export const PuzzleImg = 'https://i.ibb.co/2dDTj2z/Puzzle-Img.png'
+export const RacingImg = 'https://i.ibb.co/2nSH3QS/Racing-Img.png'
+export const SportsImg = 'https://i.ibb.co/b7W3kmb/Sports-Img.png'
+export const ActionImg = 'https://i.ibb.co/vJt8vF3/Action-Img.png'
+export const RPGImg = 'https://i.ibb.co/tYYTwcg/RPGImg.png'
