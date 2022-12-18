@@ -31,6 +31,7 @@
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/triple-slash-reference": "off"
+    "@typescript-eslint/triple-slash-reference": "off",
+    "prefer-const": 1
   }
 }
