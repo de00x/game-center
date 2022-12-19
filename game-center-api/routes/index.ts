@@ -12,7 +12,7 @@ routes.post("/registration", Controller.post.createUser);
 routes.post("/authorize", Controller.post.authorize);
 routes.post("/review", Controller.post.createReview);
 
-routes.get("/wok", Controller.get.getWok);
+routes.get("/gamePages", Controller.get.getGamesPage_1);
 routes.get("/sets", Controller.get.getSets);
 routes.get("/rolls", Controller.get.getRolls);
 routes.get("/sushi", Controller.get.getSushi);

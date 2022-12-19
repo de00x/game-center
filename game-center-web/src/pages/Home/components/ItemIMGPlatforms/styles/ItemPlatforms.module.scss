@@ -1,0 +1,9 @@
+.itemPlatforms {
+  display: flex;
+  & svg {
+    fill: #fff;
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+}

@@ -7,7 +7,11 @@ import './styles/index.scss'
 import ReactPlayer from 'react-player/youtube'
 import styles from './styles/PlayerVideo.module.scss'
 
-export const PlayerVideo: FC<IPlayerVideoProps> = ({ isPlayVideo }): JSX.Element => {
+export const PlayerVideo: FC<IPlayerVideoProps> = ({
+  clipURL,
+  logoImg,
+  isPlayVideo,
+}): JSX.Element => {
   /// styles ///
   const gameLogo = cn(styles.gameLogo, { [styles.gameLogoOff]: isPlayVideo })
   const gameLogoPlaySVG = cn(styles.gameLogoPlaySVG, { [styles.gameLogoPlaySVGOff]: isPlayVideo })
@@ -19,17 +23,13 @@ export const PlayerVideo: FC<IPlayerVideoProps> = ({ isPlayVideo }): JSX.Element
   return (
     <div className={styles.playerWrapper}>
       <ReactPlayer
-        url="https://youtu.be/OkcNFoW5dzs"
+        url={clipURL}
         className="itemPlayer"
         playing={isPlayVideo}
         volume={0}
         muted={true}
       />
-      <img
-        src="https://cdn.cloudflare.steamstatic.com/steam/apps/532790/capsule_616x353.jpg?t=1636013283"
-        alt="gameLogo"
-        className={gameLogo}
-      />
+      <img src={logoImg} alt="gameLogo" className={gameLogo} />
       <div className={gameLogoPlaySVG}>
         <Play />
       </div>

@@ -23,12 +23,33 @@
 .genres,
 .chart {
   margin-top: 0.5rem;
+}
+.genres {
   & div:nth-child(2) {
-    text-decoration: underline;
+    display: flex;
+    & div {
+      color: #fff;
+      text-decoration: underline;
+      transition: 0.2s color ease-in-out;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 0.3rem;
+      }
+      &:hover {
+        color: #464343;
+      }
+    }
   }
 }
 .chart {
   border-bottom: none;
+  & div:nth-child(2) {
+    cursor: pointer;
+    transition: 0.2s color ease-in-out;
+    &:hover {
+      color: #464343;
+    }
+  }
 }
 .btnShowMore,
 .btnHideGame {

@@ -38,15 +38,6 @@
   padding: 1rem;
   margin-bottom: 1rem;
 }
-.itemPlatforms {
-  display: flex;
-  & svg {
-    fill: #fff;
-    &:not(:last-child) {
-      margin-right: 0.5rem;
-    }
-  }
-}
 .itemName {
   font-size: 22px;
   font-weight: 600;

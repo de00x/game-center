@@ -68,8 +68,8 @@ export class DbModel {
     let result = await db.get("sets").value();
     return result;
   }
-  public static async getWok() {
-    let result = await db.get("wok").value();
+  public static async getGamesPage_1() {
+    let result = await db.get("games-page-1").value();
     return result;
   }
   public static async getAllProductBySearch() {
