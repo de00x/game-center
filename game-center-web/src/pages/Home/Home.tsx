@@ -1,12 +1,14 @@
 import { ReactComponent as NintendoSwitch } from './img/NintendoSwitch.svg'
 import { ReactComponent as PlayYouTubeBtn } from './img/PlayYouTubeBtn.svg'
 import { ReactComponent as PlayStation4 } from './img/PlayStation4.svg'
+import { ReactComponent as ArrowRight } from './img/ArrowRight.svg'
 import { ReactComponent as Wishlist } from './img/Wishlist.svg'
 import { ReactComponent as Ellipsis } from './img/Ellipsis.svg'
 import { ReactComponent as XboxOne } from './img/XboxOne.svg'
 import { ReactComponent as Android } from './img/Android.svg'
 import { ReactComponent as Play } from './img/Play.svg'
 import { ReactComponent as Plus } from './img/Plus.svg'
+import { CSSTransition } from 'react-transition-group'
 import { ReactComponent as IOS } from './img/IOS.svg'
 import { ReactComponent as PC } from './img/PC.svg'
 import { FC, useState } from 'react'
@@ -66,17 +68,46 @@ export const Home: FC = (): JSX.Element => {
               <NintendoSwitch />
             </div>
             <div className={styles.itemName}>Vampire: The Masquerade - Bloodlines 2</div>
-            <div className={styles.itemControllers}>
-              <div>
+            <div className={styles.itemControllersContainer}>
+              <div className={styles.controllerPlus}>
                 <Plus />
               </div>
-              <div>
-                <Wishlist />
-              </div>
-              <div>
-                <Ellipsis />
-              </div>
+              <CSSTransition
+                in={isPlayVideo}
+                classNames="itemControllers"
+                timeout={500}
+                unmountOnExit
+              >
+                <div className={styles.additionalyControllers}>
+                  <div>
+                    <Wishlist />
+                  </div>
+                  <div>
+                    <Ellipsis />
+                  </div>
+                </div>
+              </CSSTransition>
             </div>
+            {isPlayVideo && (
+              <div className={styles.additionalyInfoItemContainer}>
+                <div className={styles.releaseDate}>
+                  <div>Release Date:</div>
+                  <div>Dec 31, 2023</div>
+                </div>
+                <div className={styles.genres}>
+                  <div>Genres:</div>
+                  <div>Action, RPG</div>
+                </div>
+                <div className={styles.chart}>
+                  <div>Chart:</div>
+                  <div>#1 Top 2023</div>
+                </div>
+                <div className={styles.btnShowMore}>
+                  Show more like this <ArrowRight />
+                </div>
+                <div className={styles.btnHideGame}>Hide this game</div>
+              </div>
+            )}
           </div>
         </div>
       </div>

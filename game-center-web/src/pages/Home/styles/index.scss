@@ -30,3 +30,20 @@
 .react-player__play-icon {
   border-width: 10px 0px 10px 15px !important;
 }
+.itemControllers-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.itemControllers-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.itemControllers-exit {
+  opacity: 1;
+}
+.itemControllers-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
