@@ -1,0 +1,32 @@
+.itemPlayer {
+  width: 100% !important;
+  height: 12rem !important;
+  & iFrame {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    font-size: 30px !important;
+    & .ytp-watermark,
+    .yt-uix-sessionlink,
+    .ytp-watermark-small {
+      display: none !important;
+    }
+  }
+}
+.react-player__preview {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  align-items: flex-end !important;
+  justify-content: normal !important;
+  position: relative !important;
+}
+.react-player__shadow {
+  position: absolute !important;
+  width: 46px !important;
+  height: 46px !important;
+  left: 25px !important;
+  bottom: 15px !important;
+  background-color: rgba(11, 11, 11, 0.529) !important;
+}
+.react-player__play-icon {
+  border-width: 10px 0px 10px 15px !important;
+}

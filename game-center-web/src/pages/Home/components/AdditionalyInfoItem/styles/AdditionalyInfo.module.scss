@@ -1,0 +1,53 @@
+.additionalyInfoItemContainer {
+  margin-top: 0.7rem;
+}
+.releaseDate,
+.genres,
+.chart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.2px;
+  border-bottom: 0.5px solid #464343;
+  & div:nth-child(1) {
+    font-size: 13px;
+    font-weight: 300;
+    color: #a49b9b;
+  }
+  & div:nth-child(2) {
+    font-weight: 300;
+    font-size: 13px;
+  }
+}
+.genres,
+.chart {
+  margin-top: 0.5rem;
+  & div:nth-child(2) {
+    text-decoration: underline;
+  }
+}
+.chart {
+  border-bottom: none;
+}
+.btnShowMore,
+.btnHideGame {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  border-radius: 0.6rem;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  background-color: #2c2b2b;
+  transition: 0.2s color ease-in-out, 0.1s transform ease-in-out;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.02);
+    color: rgb(255, 129, 83);
+  }
+}
+.btnHideGame {
+  margin-top: 0.7rem;
+}
