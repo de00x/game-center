@@ -1,5 +1,6 @@
+import { IGameCard } from '../../../../../pages/Home/types/Home.types'
+
 export interface IPlayerVideoProps {
-  isPlayVideo: boolean
-  clipURL: string
-  logoImg: string
+  currentPlayVideo: number
+  gameItem: IGameCard
 }

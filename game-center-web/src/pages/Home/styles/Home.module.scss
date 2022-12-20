@@ -23,6 +23,10 @@
   grid-row-gap: 25px;
 }
 .mainItem {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 50;
   width: 23rem;
   border-radius: 1rem;
   transition: 0.2s transform ease-in-out;

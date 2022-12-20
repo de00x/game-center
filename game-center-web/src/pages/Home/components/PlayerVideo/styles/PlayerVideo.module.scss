@@ -1,6 +1,9 @@
 .playerWrapper {
   display: flex;
   position: relative;
+  & a {
+    color: #fff;
+  }
 }
 .gameLogo {
   position: absolute;

@@ -38,7 +38,168 @@
       "release": "Sep 27, 2022",
       "genres": ["Adventure", "Indie"],
       "chart": "#13 Top 2022",
-      "logoImg": "https://www.slythergames.com/wp-content/uploads/2020/07/Grounded-Guide-Logo.jpg"
+      "logoImg": "https://i.ibb.co/9hZ0DKc/Grounded.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Starfield",
+      "clipURL": "https://youtu.be/NagIJRhIfug",
+      "platforms": ["PC", "Xbox"],
+      "release": "Jun 30, 2023",
+      "genres": ["Adventure", "RPG"],
+      "chart": "#3 Top 2023",
+      "logoImg": "https://i.ibb.co/xhRMggj/Starfield.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Mount & Blade II: Bannerlord",
+      "clipURL": "https://youtu.be/QrpGGGmIrgI",
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "release": "Oct 20, 2022",
+      "genres": ["Action", "RPG", "Strategy", "Simulation"],
+      "chart": "#14 Top 2022",
+      "logoImg": "https://i.ibb.co/NmSWStV/Mount-Blade-II-Bannerlord.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Hogwarts Legacy",
+      "clipURL": "https://youtu.be/Ye7tJp-QFSQ?t=132",
+      "platforms": ["PC", "PlayStation", "Xbox", "Nintendo"],
+      "release": "Feb 10, 2023",
+      "genres": ["RPG"],
+      "chart": "#4 Top 2023",
+      "logoImg": "https://i.ibb.co/1vyJ672/Hogwarts.jpg"
+    },
+    {
+      "id": 8,
+      "name": "A Plague Tale: Requiem",
+      "clipURL": "https://youtu.be/b68JubXf25I?t=18",
+      "platforms": ["PC", "PlayStation", "Xbox", "Nintendo"],
+      "release": "Oct 17, 2022",
+      "genres": ["Action", "Adventure"],
+      "chart": "#15 Top 2022",
+      "logoImg": "https://i.ibb.co/0hDVTyR/A-Plague-Tale-Requiem.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Forspoken",
+      "clipURL": "https://youtu.be/i6skG7ykCiY",
+      "platforms": ["PC", "PlayStation"],
+      "release": "Jan 24, 2023",
+      "genres": ["Action", "Adventure"],
+      "chart": "#5 Top 2023",
+      "logoImg": "https://i.ibb.co/yRJF2Nr/Forspoken.webp"
+    },
+    {
+      "id": 10,
+      "name": "Overwatch 2",
+      "clipURL": "https://youtu.be/s04BW-wB6ZU",
+      "platforms": ["PC", "PlayStation", "Xbox", "Nintendo"],
+      "release": "Oct 4, 2022",
+      "genres": ["Action", "Shooter"],
+      "chart": "#19 Top 2022",
+      "logoImg": "https://i.ibb.co/VCvdbpG/over2.jpg"
+    },
+    {
+      "id": 11,
+      "name": "System Shock (Remake)",
+      "clipURL": "https://youtu.be/opLbeGieNSw",
+      "platforms": ["PC", "PlayStation", "Xbox", "Linux"],
+      "release": "Dec 31, 2022",
+      "genres": ["Action", "Shooter", "Adventure"],
+      "chart": "#43 Top 2022",
+      "logoImg": "https://i.ibb.co/0Jm6QGN/sys.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Resident Evil Re:Verse",
+      "clipURL": "https://youtu.be/IbmGe_fO68c?t=50",
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "release": "Oct 28, 2022",
+      "genres": ["Action", "Shooter"],
+      "chart": "#20 Top 2022",
+      "logoImg": "https://i.ibb.co/0FSLSmL/rese.png"
+    },
+    {
+      "id": 13,
+      "name": "The Legend of Zelda: Tears of the Kingdom",
+      "clipURL": "https://youtu.be/OvpPkh8e9Tw?t=30",
+      "platforms": ["Nintendo"],
+      "release": "May 12, 2023",
+      "genres": ["Action", "Adventure"],
+      "chart": "#9 Top 2023",
+      "logoImg": "https://i.ibb.co/fxGbmSm/zelda.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Scorn",
+      "clipURL": "https://youtu.be/2D_kF0xWS-I?t=122",
+      "platforms": ["PC", "Xbox"],
+      "release": "Ocr 14, 2022",
+      "genres": ["Action", "Adventure", "Indie"],
+      "chart": "#26 Top 2022",
+      "logoImg": "https://i.ibb.co/ckKfRLx/Scorn.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Atomic Heart",
+      "clipURL": "https://youtu.be/42wReUffJZ8",
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "release": "Feb 21, 2023",
+      "genres": ["Action", "Shooter", "Adventure"],
+      "chart": "#8 Top 2023",
+      "logoImg": "https://i.ibb.co/SV7VpHz/Atomic-Heart.png"
+    },
+    {
+      "id": 16,
+      "name": "God of War: Ragnarok",
+      "clipURL": "https://youtu.be/ixllGOX0Evw?t=3350",
+      "platforms": ["PlayStation"],
+      "release": "Nov 9, 2022",
+      "genres": ["Action"],
+      "chart": "#28 Top 2022",
+      "logoImg": "https://i.ibb.co/4ZmR13P/God-of-War-Ragnarok.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Prince of Persia: The sands of Time Remake",
+      "clipURL": "https://youtu.be/htzq7EEXQs8",
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "release": "Dec 31, 2023",
+      "genres": ["Action", "Adventure", "Puzzle", "Platformer"],
+      "chart": "#6 Top 2023",
+      "logoImg": "https://i.ibb.co/mrp5B4h/Prince-of-Persia-The-sands-of-Time-Remake.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Portal with RTX",
+      "clipURL": "https://youtu.be/agBH85qivMk?t=297",
+      "platforms": ["PC"],
+      "release": "Dec 8, 2022",
+      "genres": ["Action", "Adventure", "Puzzle"],
+      "chart": "#411 Top 2022",
+      "logoImg": "https://i.ibb.co/jZfP4c5/Portal-with-RTX.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Diablo IV",
+      "clipURL": "https://youtu.be/QqY-CAC7zYE",
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "release": "Jun 6, 2023",
+      "genres": ["Action", "RPG"],
+      "chart": "#7 Top 2023",
+      "logoImg": "https://i.ibb.co/jrypTTN/Diablo-IV.jpg"
+    },
+    {
+      "id": 20,
+      "name": "The Callisto Protocol",
+      "clipURL": "https://youtu.be/Bx05iZL-Wg0?t=52",
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "release": "Dec 2, 2022",
+      "genres": ["Adventure"],
+      "chart": "#38 Top 2022",
+      "logoImg": "https://i.ibb.co/vJ96ndR/The-Callisto-Protocol.jpg"
     }
-  ]
+  ],
+  "games-page-2": []
 }

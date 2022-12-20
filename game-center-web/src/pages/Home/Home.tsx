@@ -11,7 +11,7 @@ import styles from './styles/Home.module.scss'
 
 export const Home: FC = (): JSX.Element => {
   const [gameCard, setGameCard] = useState<IGameCard[]>([])
-  const [isPlayVideo, setIsPlayVideo] = useState(false)
+  const [currentPlayVideo, setCurrentPlayVideo] = useState(0)
 
   useEffect(() => {
     axios
@@ -28,15 +28,11 @@ export const Home: FC = (): JSX.Element => {
         {gameCard.map((gameItem) => (
           <div
             className={styles.mainItem}
-            onMouseOver={() => setIsPlayVideo(true)}
-            onMouseOut={() => setIsPlayVideo(false)}
+            onMouseOver={() => setCurrentPlayVideo(gameItem.id)}
+            onMouseOut={() => setCurrentPlayVideo(0)}
             key={gameItem.id}
           >
-            <PlayerVideo
-              isPlayVideo={isPlayVideo}
-              clipURL={gameItem.clipURL}
-              logoImg={gameItem.logoImg}
-            />
+            <PlayerVideo currentPlayVideo={currentPlayVideo} gameItem={gameItem} />
             <div className={styles.itemInfoContainer}>
               <ItemIMGPlatforms gameItem={gameItem} />
               <div className={styles.itemName}>{gameItem.name}</div>
@@ -45,7 +41,7 @@ export const Home: FC = (): JSX.Element => {
                   <Plus />
                 </div>
                 <CSSTransition
-                  in={isPlayVideo}
+                  in={currentPlayVideo === gameItem.id}
                   classNames="itemControllers"
                   timeout={500}
                   unmountOnExit
@@ -60,8 +56,8 @@ export const Home: FC = (): JSX.Element => {
                   </div>
                 </CSSTransition>
               </div>
-              {isPlayVideo && <AdditionalyInfoItem gameItem={gameItem} />}
             </div>
+            {true && <AdditionalyInfoItem gameItem={gameItem} />}
           </div>
         ))}
       </div>

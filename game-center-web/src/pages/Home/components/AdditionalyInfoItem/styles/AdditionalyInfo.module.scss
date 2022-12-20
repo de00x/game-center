@@ -1,5 +1,14 @@
 .additionalyInfoItemContainer {
-  margin-top: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  z-index: 1000 !important;
+  bottom: -60%;
+  padding: 0rem 1rem;
+  background-color: #202020;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 .releaseDate,
 .genres,
@@ -28,6 +37,7 @@
   & div:nth-child(2) {
     display: flex;
     & div {
+      font-size: 13px;
       color: #fff;
       text-decoration: underline;
       transition: 0.2s color ease-in-out;
@@ -71,4 +81,5 @@
 }
 .btnHideGame {
   margin-top: 0.7rem;
+  margin-bottom: 1rem;
 }
