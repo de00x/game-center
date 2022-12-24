@@ -2,6 +2,7 @@
   width: 100%;
   padding-right: 3rem;
   padding-top: 3rem;
+  padding-bottom: 17rem;
   color: #fff;
 }
 .header {
@@ -23,17 +24,16 @@
   grid-row-gap: 25px;
 }
 .mainItem {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 50;
-  width: 23rem;
+  height: 370px;
   border-radius: 1rem;
   transition: 0.2s transform ease-in-out;
   background-color: #202020;
   &:hover {
     transform: scale(1.03);
   }
+}
+.mainItemActive {
+  z-index: 1;
 }
 .itemInfoContainer {
   display: flex;
@@ -98,5 +98,13 @@
         fill: #000;
       }
     }
+  }
+}
+.playerWrapper {
+  display: flex;
+  position: relative;
+  min-height: 207px;
+  & a {
+    color: #fff;
   }
 }

@@ -1,11 +1,19 @@
 import { IAdditionalyInfoProps } from './types/AdditionalyInfo.types'
 import { ReactComponent as ArrowRight } from './img/ArrowRight.svg'
-import styles from './styles/AdditionalyInfo.module.scss'
 import { FC } from 'react'
+import cn from 'classnames'
+import styles from './styles/AdditionalyInfo.module.scss'
 
-export const AdditionalyInfoItem: FC<IAdditionalyInfoProps> = ({ gameItem }): JSX.Element => {
+export const AdditionalyInfoItem: FC<IAdditionalyInfoProps> = ({
+  gameItem,
+  currentPlayVideo,
+}): JSX.Element => {
   return (
-    <div className={styles.additionalyInfoItemContainer}>
+    <div
+      className={cn(styles.additionalyInfoItemContainer, {
+        [styles.additionalyInfoItemContainerAcitve]: currentPlayVideo === gameItem.id,
+      })}
+    >
       <div className={styles.releaseDate}>
         <div>Release Date:</div>
         <div>{gameItem.release}</div>

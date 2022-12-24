@@ -1,4 +1,5 @@
-import { AdditionalyInfoItem, ItemIMGPlatforms, PlayerVideo } from './components'
+import { AdditionalyInfoItem, PlayerBackground, PlayerVideo } from './components'
+import ItemIMGPlatforms from './components/ItemIMGPlatforms/ItemIMGPlatforms'
 import { ReactComponent as Wishlist } from './img/Wishlist.svg'
 import { ReactComponent as Ellipsis } from './img/Ellipsis.svg'
 import { ReactComponent as Plus } from './img/Plus.svg'
@@ -7,6 +8,7 @@ import { FC, useEffect, useState } from 'react'
 import { IGameCard } from './types/Home.types'
 import axios from 'axios'
 import './styles/index.scss'
+import cn from 'classnames'
 import styles from './styles/Home.module.scss'
 
 export const Home: FC = (): JSX.Element => {
@@ -27,12 +29,19 @@ export const Home: FC = (): JSX.Element => {
       <div className={styles.mainContainer}>
         {gameCard.map((gameItem) => (
           <div
-            className={styles.mainItem}
+            className={cn(styles.mainItem, {
+              [styles.mainItemActive]: currentPlayVideo === gameItem.id,
+            })}
             onMouseOver={() => setCurrentPlayVideo(gameItem.id)}
             onMouseOut={() => setCurrentPlayVideo(0)}
             key={gameItem.id}
           >
-            <PlayerVideo currentPlayVideo={currentPlayVideo} gameItem={gameItem} />
+            <div className={styles.playerWrapper}>
+              {currentPlayVideo === gameItem.id && (
+                <PlayerVideo currentPlayVideo={currentPlayVideo} gameItem={gameItem} />
+              )}
+              <PlayerBackground currentPlayVideo={currentPlayVideo} gameItem={gameItem} />
+            </div>
             <div className={styles.itemInfoContainer}>
               <ItemIMGPlatforms gameItem={gameItem} />
               <div className={styles.itemName}>{gameItem.name}</div>
@@ -57,7 +66,9 @@ export const Home: FC = (): JSX.Element => {
                 </CSSTransition>
               </div>
             </div>
-            {true && <AdditionalyInfoItem gameItem={gameItem} />}
+            {currentPlayVideo === gameItem.id && (
+              <AdditionalyInfoItem gameItem={gameItem} currentPlayVideo={currentPlayVideo} />
+            )}
           </div>
         ))}
       </div>

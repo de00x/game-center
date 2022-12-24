@@ -3,12 +3,14 @@
   flex-direction: column;
   position: absolute;
   width: 100%;
-  z-index: 1000 !important;
   bottom: -60%;
   padding: 0rem 1rem;
   background-color: #202020;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+}
+.additionalyInfoItemContainerAcitve {
+  z-index: 2;
 }
 .releaseDate,
 .genres,

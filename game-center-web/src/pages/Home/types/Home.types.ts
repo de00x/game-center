@@ -1,7 +1,8 @@
 export interface IGameCard {
   id: number
   name: string
-  clipURL: string
+  clip: string | null
+  fullVideo: string
   platforms: string[]
   release: string
   genres: string[]

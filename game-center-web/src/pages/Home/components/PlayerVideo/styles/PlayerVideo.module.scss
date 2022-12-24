@@ -1,21 +1,14 @@
-.playerWrapper {
-  display: flex;
-  position: relative;
-  & a {
-    color: #fff;
-  }
-}
 .gameLogo {
   position: absolute;
   width: 100%;
-  height: 12rem;
+  height: 100%;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   opacity: 100%;
   transition: 0s opacity ease-in-out;
 }
 .gameLogoOff {
-  transition: 0.5s opacity ease-in-out;
+  transition: 0.3s opacity ease-in-out;
   opacity: 0%;
 }
 .gameLogoPlaySVG {
@@ -36,7 +29,7 @@
   }
 }
 .gameLogoPlaySVGOff {
-  transition: 0.5s opacity ease-in-out;
+  transition: 0.3s opacity ease-in-out;
   opacity: 0%;
 }
 
@@ -65,4 +58,10 @@
   &:hover {
     border-color: rgb(113, 111, 111);
   }
+}
+.itemPlayer {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  font-size: 30px !important;
 }

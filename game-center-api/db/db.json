@@ -3,17 +3,20 @@
     {
       "id": 1,
       "name": "Vampire: The Masquerade - Bloodlines 2",
-      "clipURL": "https://youtu.be/OkcNFoW5dzs",
+      "clip": "https://media.rawg.io/media/stories-640/80b/80bbb6049233cf75621004e9be886715.mp4",
+      "fullVideo": "https://youtu.be/OkcNFoW5dzs",
       "platforms": ["PC", "PlayStation", "Xbox"],
       "release": "Dec 31, 2023",
       "genres": ["Action", "RPG"],
       "chart": "#1 Top 2023",
       "logoImg": "https://i.ibb.co/NZT9184/bloodlines2.jpg"
     },
+
     {
       "id": 2,
       "name": "Vampire Survivors",
-      "clipURL": "https://youtu.be/ppTksyNGwf8",
+      "clip": "https://media.rawg.io/media/stories-640/95c/95c8d96ec0f82deaf4423c85a1669a6f.mp4",
+      "fullVideo": "https://youtu.be/ppTksyNGwf8",
       "platforms": ["PC", "Xbox", "iOS", "Android"],
       "release": "Oct 20, 2022",
       "genres": ["Action", "RPG", "Casual", "Indie"],
@@ -23,7 +26,8 @@
     {
       "id": 3,
       "name": "S.T.A.L.K.E.R.2: Heart of Chornobyl",
-      "clipURL": "https://youtu.be/SjDMwsbaSd8",
+      "clip": "https://media.rawg.io/media/stories-640/905/905c69af118fde927180ecf5b391c4f9.mp4",
+      "fullVideo": "https://youtu.be/SjDMwsbaSd8",
       "platforms": ["PC", "Xbox"],
       "release": "Jun 30, 2023",
       "genres": ["Action", "Shooter", "Adventure", "RPG"],
@@ -33,7 +37,8 @@
     {
       "id": 4,
       "name": "Grounded",
-      "clipURL": "https://youtu.be/ZB9jhpAa_YI",
+      "clip": "https://media.rawg.io/media/stories-640/ec0/ec0b31efe5936843b397e1d575a6362e.mp4",
+      "fullVideo": "https://youtu.be/ZB9jhpAa_YI",
       "platforms": ["PC", "Xbox"],
       "release": "Sep 27, 2022",
       "genres": ["Adventure", "Indie"],
@@ -43,7 +48,8 @@
     {
       "id": 5,
       "name": "Starfield",
-      "clipURL": "https://youtu.be/NagIJRhIfug",
+      "clip": null,
+      "fullVideo": "https://youtu.be/NagIJRhIfug",
       "platforms": ["PC", "Xbox"],
       "release": "Jun 30, 2023",
       "genres": ["Adventure", "RPG"],
@@ -53,7 +59,8 @@
     {
       "id": 6,
       "name": "Mount & Blade II: Bannerlord",
-      "clipURL": "https://youtu.be/QrpGGGmIrgI",
+      "clip": "https://media.rawg.io/media/stories-640/644/6449170442b740b27f9e471e58bcdaf1.mp4",
+      "fullVideo": "https://youtu.be/QrpGGGmIrgI",
       "platforms": ["PC", "PlayStation", "Xbox"],
       "release": "Oct 20, 2022",
       "genres": ["Action", "RPG", "Strategy", "Simulation"],
@@ -63,7 +70,8 @@
     {
       "id": 7,
       "name": "Hogwarts Legacy",
-      "clipURL": "https://youtu.be/Ye7tJp-QFSQ?t=132",
+      "clip": "https://media.rawg.io/media/stories-640/1f1/1f11b5a88a0be2f33283faa5668b303d.mp4",
+      "fullVideo": "https://youtu.be/Ye7tJp-QFSQ?t=132",
       "platforms": ["PC", "PlayStation", "Xbox", "Nintendo"],
       "release": "Feb 10, 2023",
       "genres": ["RPG"],
@@ -73,7 +81,8 @@
     {
       "id": 8,
       "name": "A Plague Tale: Requiem",
-      "clipURL": "https://youtu.be/b68JubXf25I?t=18",
+      "clip": "https://media.rawg.io/media/stories-640/7f8/7f8b7644d2dae6b3b1daac5c1557de80.mp4",
+      "fullVideo": "https://youtu.be/b68JubXf25I?t=18",
       "platforms": ["PC", "PlayStation", "Xbox", "Nintendo"],
       "release": "Oct 17, 2022",
       "genres": ["Action", "Adventure"],
@@ -83,7 +92,8 @@
     {
       "id": 9,
       "name": "Forspoken",
-      "clipURL": "https://youtu.be/i6skG7ykCiY",
+      "clip": null,
+      "fullVideo": "https://youtu.be/i6skG7ykCiY",
       "platforms": ["PC", "PlayStation"],
       "release": "Jan 24, 2023",
       "genres": ["Action", "Adventure"],
@@ -93,7 +103,8 @@
     {
       "id": 10,
       "name": "Overwatch 2",
-      "clipURL": "https://youtu.be/s04BW-wB6ZU",
+      "clip": "https://media.rawg.io/media/stories-640/748/74893409c647da2abde56646014f9d5e.mp4",
+      "fullVideo": "https://youtu.be/s04BW-wB6ZU",
       "platforms": ["PC", "PlayStation", "Xbox", "Nintendo"],
       "release": "Oct 4, 2022",
       "genres": ["Action", "Shooter"],
@@ -103,7 +114,8 @@
     {
       "id": 11,
       "name": "System Shock (Remake)",
-      "clipURL": "https://youtu.be/opLbeGieNSw",
+      "clip": "https://media.rawg.io/media/stories-640/7b7/7b7a7571fbedee45cc3abe76caf4e613.mp4",
+      "fullVideo": "https://youtu.be/opLbeGieNSw",
       "platforms": ["PC", "PlayStation", "Xbox", "Linux"],
       "release": "Dec 31, 2022",
       "genres": ["Action", "Shooter", "Adventure"],
@@ -113,7 +125,8 @@
     {
       "id": 12,
       "name": "Resident Evil Re:Verse",
-      "clipURL": "https://youtu.be/IbmGe_fO68c?t=50",
+      "clip": "https://media.rawg.io/media/stories-640/290/29090db6ee161de15ba755274305f435.mp4",
+      "fullVideo": "https://youtu.be/IbmGe_fO68c?t=50",
       "platforms": ["PC", "PlayStation", "Xbox"],
       "release": "Oct 28, 2022",
       "genres": ["Action", "Shooter"],
@@ -123,7 +136,8 @@
     {
       "id": 13,
       "name": "The Legend of Zelda: Tears of the Kingdom",
-      "clipURL": "https://youtu.be/OvpPkh8e9Tw?t=30",
+      "clip": "https://media.rawg.io/media/stories-640/cf2/cf2d2ad3d0c3c440ae56dfb77cd21ca6.mp4",
+      "fullVideo": "https://https://player.vimeo.com/video/67120489?h=be574f88a4",
       "platforms": ["Nintendo"],
       "release": "May 12, 2023",
       "genres": ["Action", "Adventure"],
@@ -133,7 +147,8 @@
     {
       "id": 14,
       "name": "Scorn",
-      "clipURL": "https://youtu.be/2D_kF0xWS-I?t=122",
+      "clip": "https://media.rawg.io/media/stories-640/719/719368cc39314cf80ebda68b2ff20e88.mp4",
+      "fullVideo": "https://youtu.be/2D_kF0xWS-I?t=122",
       "platforms": ["PC", "Xbox"],
       "release": "Ocr 14, 2022",
       "genres": ["Action", "Adventure", "Indie"],
@@ -143,7 +158,8 @@
     {
       "id": 15,
       "name": "Atomic Heart",
-      "clipURL": "https://youtu.be/42wReUffJZ8",
+      "clip": "https://media.rawg.io/media/stories-640/8d3/8d3e64216ed2a70e27e5222f9f713c2e.mp4",
+      "fullVideo": "https://youtu.be/42wReUffJZ8",
       "platforms": ["PC", "PlayStation", "Xbox"],
       "release": "Feb 21, 2023",
       "genres": ["Action", "Shooter", "Adventure"],
@@ -152,8 +168,9 @@
     },
     {
       "id": 16,
-      "name": "God of War: Ragnarok",
-      "clipURL": "https://youtu.be/ixllGOX0Evw?t=3350",
+      "name": "God of War: Ragnarök",
+      "clip": "https://media.rawg.io/media/stories-640/1c7/1c7c6e737b30b2f0b92cee7cbebd1594.mp4",
+      "fullVideo": "https://youtu.be/ixllGOX0Evw?t=3350",
       "platforms": ["PlayStation"],
       "release": "Nov 9, 2022",
       "genres": ["Action"],
@@ -163,7 +180,8 @@
     {
       "id": 17,
       "name": "Prince of Persia: The sands of Time Remake",
-      "clipURL": "https://youtu.be/htzq7EEXQs8",
+      "clip": "https://media.rawg.io/media/stories-640/6e7/6e7d3b3665e1a4321fdbbcf561dcbb0e.mp4",
+      "fullVideo": "https://youtu.be/htzq7EEXQs8",
       "platforms": ["PC", "PlayStation", "Xbox"],
       "release": "Dec 31, 2023",
       "genres": ["Action", "Adventure", "Puzzle", "Platformer"],
@@ -173,7 +191,8 @@
     {
       "id": 18,
       "name": "Portal with RTX",
-      "clipURL": "https://youtu.be/agBH85qivMk?t=297",
+      "clip": null,
+      "fullVideo": "https://youtu.be/agBH85qivMk?t=297",
       "platforms": ["PC"],
       "release": "Dec 8, 2022",
       "genres": ["Action", "Adventure", "Puzzle"],
@@ -183,7 +202,8 @@
     {
       "id": 19,
       "name": "Diablo IV",
-      "clipURL": "https://youtu.be/QqY-CAC7zYE",
+      "clip": "https://media.rawg.io/media/stories-640/77c/77cff7f42cc56f8a571fc373560fe0a3.mp4",
+      "fullVideo": "https://youtu.be/QqY-CAC7zYE",
       "platforms": ["PC", "PlayStation", "Xbox"],
       "release": "Jun 6, 2023",
       "genres": ["Action", "RPG"],
@@ -193,7 +213,8 @@
     {
       "id": 20,
       "name": "The Callisto Protocol",
-      "clipURL": "https://youtu.be/Bx05iZL-Wg0?t=52",
+      "clip": "https://media.rawg.io/media/stories-640/3d7/3d7b435b83beb44d085c3927b049a59b.mp4",
+      "fullVideo": "https://youtu.be/Bx05iZL-Wg0?t=52",
       "platforms": ["PC", "PlayStation", "Xbox"],
       "release": "Dec 2, 2022",
       "genres": ["Adventure"],
