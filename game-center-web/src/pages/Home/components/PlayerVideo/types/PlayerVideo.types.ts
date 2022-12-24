@@ -1,6 +1,13 @@
 import { IGameCard } from '../../../../../pages/Home/types/Home.types'
 
-export interface IPlayerVideoProps {
-  currentPlayVideo: number
+interface IPlayerVideoProps {
   gameItem: IGameCard
+  currentPlayVideo: number
 }
+interface IPlayerVideoBGDProps {
+  gameItem: IGameCard
+  currentPlayVideo: number
+  setUrlPlayFullVideo: React.Dispatch<React.SetStateAction<string>>
+}
+
+export type { IPlayerVideoProps, IPlayerVideoBGDProps }

@@ -3,26 +3,31 @@ import { ReactComponent as Play } from './img/Play.svg'
 import { FC } from 'react'
 import cn from 'classnames'
 import styles from './styles/PlayerVideo.module.scss'
-import { IPlayerVideoProps } from './types/PlayerVideo.types'
+import { IPlayerVideoBGDProps } from './types/PlayerVideo.types'
 
-export const PlayerBackground: FC<IPlayerVideoProps> = ({ gameItem, currentPlayVideo }) => {
+export const PlayerBackground: FC<IPlayerVideoBGDProps> = ({ ...props }) => {
   /// styles ///
-  const gameLogo = cn(styles.gameLogo, { [styles.gameLogoOff]: currentPlayVideo === gameItem.id })
+  const gameLogo = cn(styles.gameLogo, {
+    [styles.gameLogoOff]: props.currentPlayVideo === props.gameItem.id,
+  })
   const gameLogoPlaySVG = cn(styles.gameLogoPlaySVG, {
-    [styles.gameLogoPlaySVGOff]: currentPlayVideo === gameItem.id,
+    [styles.gameLogoPlaySVGOff]: props.currentPlayVideo === props.gameItem.id,
   })
   const playFullVideoBtn = cn(styles.playFullVideoBtn, {
-    [styles.playFullVideoBtnActive]: currentPlayVideo === gameItem.id,
+    [styles.playFullVideoBtnActive]: props.currentPlayVideo === props.gameItem.id,
   })
   /// styles ///
 
   return (
     <>
-      <img src={gameItem.logoImg} alt="gameLogo" className={gameLogo} />
+      <img src={props.gameItem.logoImg} alt="gameLogo" className={gameLogo} />
       <div className={gameLogoPlaySVG}>
         <Play />
       </div>
-      <div className={playFullVideoBtn}>
+      <div
+        className={playFullVideoBtn}
+        onClick={() => props.setUrlPlayFullVideo(props.gameItem.fullVideo)}
+      >
         <PlayYouTubeBtn /> Play full video
       </div>
     </>

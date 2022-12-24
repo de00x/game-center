@@ -8,19 +8,21 @@ import { ReactComponent as PC } from './img/PC.svg'
 import { FC, memo } from 'react'
 import styles from './styles/ItemPlatforms.module.scss'
 
-const ItemIMGPlatforms: FC<IItemPlatformsProps> = ({ gameItem }): JSX.Element => {
+const ItemIMGPlatforms: FC<IItemPlatformsProps> = ({ ...props }): JSX.Element => {
   const gameCardPlatforms = (platforms: string[], currentPlatofrm: string): string | undefined => {
     const result = platforms.find((platform) => platform === currentPlatofrm)
     if (result !== undefined) return result
   }
   return (
     <div className={styles.itemPlatforms}>
-      {gameCardPlatforms(gameItem.platforms, 'PC') === 'PC' && <PC />}
-      {gameCardPlatforms(gameItem.platforms, 'PlayStation') === 'PlayStation' && <PlayStation />}
-      {gameCardPlatforms(gameItem.platforms, 'Xbox') === 'Xbox' && <XboxOne />}
-      {gameCardPlatforms(gameItem.platforms, 'iOS') === 'iOS' && <IOS />}
-      {gameCardPlatforms(gameItem.platforms, 'Android') === 'Android' && <Android />}
-      {gameCardPlatforms(gameItem.platforms, 'Nintendo') === 'Nintendo' && <NintendoSwitch />}
+      {gameCardPlatforms(props.gameItem.platforms, 'PC') === 'PC' && <PC />}
+      {gameCardPlatforms(props.gameItem.platforms, 'PlayStation') === 'PlayStation' && (
+        <PlayStation />
+      )}
+      {gameCardPlatforms(props.gameItem.platforms, 'Xbox') === 'Xbox' && <XboxOne />}
+      {gameCardPlatforms(props.gameItem.platforms, 'iOS') === 'iOS' && <IOS />}
+      {gameCardPlatforms(props.gameItem.platforms, 'Android') === 'Android' && <Android />}
+      {gameCardPlatforms(props.gameItem.platforms, 'Nintendo') === 'Nintendo' && <NintendoSwitch />}
     </div>
   )
 }

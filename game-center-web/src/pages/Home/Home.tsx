@@ -1,4 +1,4 @@
-import { AdditionalyInfoItem, PlayerBackground, PlayerVideo } from './components'
+import { AdditionalyInfoItem, PlayerBackground, PlayerVideo, PlayFullVideo } from './components'
 import ItemIMGPlatforms from './components/ItemIMGPlatforms/ItemIMGPlatforms'
 import { ReactComponent as Wishlist } from './img/Wishlist.svg'
 import { ReactComponent as Ellipsis } from './img/Ellipsis.svg'
@@ -12,8 +12,9 @@ import cn from 'classnames'
 import styles from './styles/Home.module.scss'
 
 export const Home: FC = (): JSX.Element => {
-  const [gameCard, setGameCard] = useState<IGameCard[]>([])
+  const [urlPlayFullVideo, setUrlPlayFullVideo] = useState('')
   const [currentPlayVideo, setCurrentPlayVideo] = useState(0)
+  const [gameCard, setGameCard] = useState<IGameCard[]>([])
 
   useEffect(() => {
     axios
@@ -27,6 +28,17 @@ export const Home: FC = (): JSX.Element => {
       <div className={styles.header}>New and trending</div>
       <div className={styles.subHeader}>Based on player counts and release date</div>
       <div className={styles.mainContainer}>
+        <CSSTransition
+          in={urlPlayFullVideo !== ''}
+          classNames="playFullVideo"
+          timeout={700}
+          unmountOnExit
+        >
+          <PlayFullVideo
+            urlPlayFullVideo={urlPlayFullVideo}
+            setUrlPlayFullVideo={setUrlPlayFullVideo}
+          />
+        </CSSTransition>
         {gameCard.map((gameItem) => (
           <div
             className={cn(styles.mainItem, {
@@ -40,7 +52,11 @@ export const Home: FC = (): JSX.Element => {
               {currentPlayVideo === gameItem.id && (
                 <PlayerVideo currentPlayVideo={currentPlayVideo} gameItem={gameItem} />
               )}
-              <PlayerBackground currentPlayVideo={currentPlayVideo} gameItem={gameItem} />
+              <PlayerBackground
+                gameItem={gameItem}
+                currentPlayVideo={currentPlayVideo}
+                setUrlPlayFullVideo={setUrlPlayFullVideo}
+              />
             </div>
             <div className={styles.itemInfoContainer}>
               <ItemIMGPlatforms gameItem={gameItem} />
