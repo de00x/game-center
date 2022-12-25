@@ -7,9 +7,11 @@ export const PlayerVideo: FC<IPlayerVideoProps> = ({ ...props }): JSX.Element =>
   const videoPlayerRef: any = useRef()
 
   useEffect(() => {
-    if (props.currentPlayVideo === props.gameItem.id) {
-      videoPlayerRef.current.play()
-    } else videoPlayerRef.current.pause()
+    if (props.gameItem.clip !== null) {
+      if (props.currentPlayVideo === props.gameItem.id) {
+        videoPlayerRef.current.play()
+      } else videoPlayerRef.current.pause()
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.currentPlayVideo])
 
