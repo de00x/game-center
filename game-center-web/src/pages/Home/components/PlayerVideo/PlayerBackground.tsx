@@ -1,4 +1,5 @@
 import { ReactComponent as PlayYouTubeBtn } from './img/PlayYouTubeBtn.svg'
+import { ReactComponent as Pictures } from './img/pictures.svg'
 import { ReactComponent as Play } from './img/Play.svg'
 import { FC } from 'react'
 import cn from 'classnames'
@@ -22,14 +23,16 @@ export const PlayerBackground: FC<IPlayerVideoBGDProps> = ({ ...props }) => {
     <>
       <img src={props.gameItem.logoImg} alt="gameLogo" className={gameLogo} />
       <div className={gameLogoPlaySVG}>
-        <Play />
+        {props.gameItem.clip !== null ? <Play /> : <Pictures />}
       </div>
-      <div
-        className={playFullVideoBtn}
-        onClick={() => props.setUrlPlayFullVideo(props.gameItem.fullVideo)}
-      >
-        <PlayYouTubeBtn /> Play full video
-      </div>
+      {props.gameItem.clip !== null && (
+        <div
+          className={playFullVideoBtn}
+          onClick={() => props.setUrlPlayFullVideo(props.gameItem.fullVideo)}
+        >
+          <PlayYouTubeBtn /> Play full video
+        </div>
+      )}
     </>
   )
 }

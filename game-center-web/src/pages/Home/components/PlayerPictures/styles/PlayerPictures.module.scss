@@ -1,0 +1,44 @@
+.playerPicturesContainer {
+  width: 100%;
+  display: flex;
+  position: relative;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.currentPictures {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  & img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 100%;
+    height: 100%;
+  }
+}
+.columnContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+  padding-bottom: 1rem;
+  font-size: 30px;
+  cursor: default;
+  &:hover {
+    .column {
+      background-color: rgb(243, 238, 238);
+    }
+  }
+}
+.column {
+  width: 75%;
+  height: 0.3rem;
+  border-radius: 1rem;
+  background-color: rgb(167, 162, 162);
+  transition: 0.25s background-color ease-in-out;
+}

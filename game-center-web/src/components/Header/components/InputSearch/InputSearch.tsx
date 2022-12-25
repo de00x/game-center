@@ -9,6 +9,7 @@ const InputSearch: FC = (): JSX.Element => {
   const [visibleHotKeyInput, setVisibleHotKeyInput] = useState(true)
   const [currentSearchGames, setCurrentSearchGames] = useState('')
   const [searchInputData, setSearchInputData] = useState('')
+  const [isFocusInput, setIsFocusInput] = useState(false)
 
   useEffect(() => {
     axios
@@ -33,11 +34,13 @@ const InputSearch: FC = (): JSX.Element => {
       <input
         value={searchInputData}
         placeholder={currentSearchGames}
+        onFocus={() => setIsFocusInput(true)}
+        onBlur={() => setIsFocusInput(false)}
         onMouseLeave={() => setVisibleHotKeyInput(true)}
         onMouseEnter={() => setVisibleHotKeyInput(false)}
         onChange={(e) => setSearchInputData(e.target.value)}
       />
-      {visibleHotKeyInput && searchInputData.length === 0 && (
+      {visibleHotKeyInput && !isFocusInput && (
         <>
           <div className={styles.inputHotKeyAlt}>alt</div>
           <div className={styles.inputHotKeyPlus}>+</div>

@@ -3,6 +3,7 @@ import { ReactComponent as PlayStation } from './img/PlayStation.svg'
 import { IItemPlatformsProps } from './types/ItemPlatforms.types'
 import { ReactComponent as XboxOne } from './img/XboxOne.svg'
 import { ReactComponent as Android } from './img/Android.svg'
+import { ReactComponent as Linux } from './img/Linux.svg'
 import { ReactComponent as IOS } from './img/IOS.svg'
 import { ReactComponent as PC } from './img/PC.svg'
 import { FC, memo } from 'react'
@@ -23,6 +24,7 @@ const ItemIMGPlatforms: FC<IItemPlatformsProps> = ({ ...props }): JSX.Element =>
       {gameCardPlatforms(props.gameItem.platforms, 'iOS') === 'iOS' && <IOS />}
       {gameCardPlatforms(props.gameItem.platforms, 'Android') === 'Android' && <Android />}
       {gameCardPlatforms(props.gameItem.platforms, 'Nintendo') === 'Nintendo' && <NintendoSwitch />}
+      {gameCardPlatforms(props.gameItem.platforms, 'Linux') === 'Linux' && <Linux />}
     </div>
   )
 }

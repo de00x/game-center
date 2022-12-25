@@ -1,4 +1,3 @@
-import { AdditionalyInfoItem, PlayerBackground, PlayerVideo, PlayFullVideo } from './components'
 import ItemIMGPlatforms from './components/ItemIMGPlatforms/ItemIMGPlatforms'
 import { ReactComponent as Wishlist } from './img/Wishlist.svg'
 import { ReactComponent as Ellipsis } from './img/Ellipsis.svg'
@@ -6,10 +5,17 @@ import { ReactComponent as Plus } from './img/Plus.svg'
 import { CSSTransition } from 'react-transition-group'
 import { FC, useEffect, useState } from 'react'
 import { IGameCard } from './types/Home.types'
-import axios from 'axios'
+import styles from './styles/Home.module.scss'
 import './styles/index.scss'
 import cn from 'classnames'
-import styles from './styles/Home.module.scss'
+import axios from 'axios'
+import {
+  AdditionalyInfoItem,
+  PlayerBackground,
+  PlayerPictures,
+  PlayFullVideo,
+  PlayerVideo,
+} from './components'
 
 export const Home: FC = (): JSX.Element => {
   const [urlPlayFullVideo, setUrlPlayFullVideo] = useState('')
@@ -50,7 +56,13 @@ export const Home: FC = (): JSX.Element => {
           >
             <div className={styles.playerWrapper}>
               {currentPlayVideo === gameItem.id && (
-                <PlayerVideo currentPlayVideo={currentPlayVideo} gameItem={gameItem} />
+                <>
+                  {gameItem.clip !== null ? (
+                    <PlayerVideo currentPlayVideo={currentPlayVideo} gameItem={gameItem} />
+                  ) : (
+                    <PlayerPictures gameItem={gameItem} />
+                  )}
+                </>
               )}
               <PlayerBackground
                 gameItem={gameItem}

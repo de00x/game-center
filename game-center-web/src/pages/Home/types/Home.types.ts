@@ -1,11 +1,12 @@
 export interface IGameCard {
-  id: number
-  name: string
+  clipPictures: string[] | null
   clip: string | null
-  fullVideo: string
   platforms: string[]
-  release: string
+  fullVideo: string
   genres: string[]
-  chart: string
   logoImg: string
+  release: string
+  chart: string
+  name: string
+  id: number
 }
