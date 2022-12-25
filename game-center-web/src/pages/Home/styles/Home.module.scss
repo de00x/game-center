@@ -2,7 +2,7 @@
   width: 100%;
   padding-right: 3rem;
   padding-top: 3rem;
-  padding-bottom: 17rem;
+  padding-bottom: 5rem;
   color: #fff;
 }
 .header {
@@ -106,5 +106,23 @@
   min-height: 207px;
   & a {
     color: #fff;
+  }
+}
+.btnLoadMoreContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  & button {
+    padding: 0.8rem 4rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: #c5bfbf;
+    background-color: #434141;
+    transition: 0.2s background-color ease-in-out, 0.2s color ease-in-out;
+    &:hover {
+      color: #000;
+      background-color: #fff;
+    }
   }
 }

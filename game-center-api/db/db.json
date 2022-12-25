@@ -12,7 +12,6 @@
       "chart": "#1 Top 2023",
       "logoImg": "https://i.ibb.co/NZT9184/bloodlines2.jpg"
     },
-
     {
       "id": 2,
       "name": "Vampire Survivors",
@@ -266,5 +265,334 @@
       "logoImg": "https://i.ibb.co/vJ96ndR/The-Callisto-Protocol.jpg"
     }
   ],
-  "games-page-2": []
+  "games-page-2": [
+    {
+      "id": 21,
+      "name": "High on Life",
+      "clip": "https://media.rawg.io/media/stories-640/276/276d385d43ac50a634764e4eb51c17b4.mp4",
+      "clipPictures": null,
+      "fullVideo": "https://youtu.be/kx56ecTCbOU",
+      "platforms": ["PC", "Xbox"],
+      "release": "Dec 13, 2022",
+      "genres": ["Action", "Shooter", "Adventure"],
+      "chart": "#80 Top 2022",
+      "logoImg": "https://i.ibb.co/hVxwMwM/High-on-Life.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Dead Space (2023)",
+      "clip": null,
+      "clipPictures": [
+        "https://i.ibb.co/kqMFCtm/Dead-Space-2023-1.jpg",
+        "https://i.ibb.co/syQTjLk/Dead-Space-2023-2.jpg",
+        "https://i.ibb.co/MCbTXNF/Dead-Space-2023-3.jpg",
+        "https://i.ibb.co/3vftdTf/Dead-Space-2023-4.jpg",
+        "https://i.ibb.co/RpChwCv/Dead-Space-2023-5.jpg",
+        "https://i.ibb.co/k1dFKTH/Dead-Space-2023-6.jpg",
+        "https://i.ibb.co/yQbFw6q/Dead-Space-2023-7.webp"
+      ],
+      "fullVideo": "https://youtu.be/cTDJNZ9cK1w",
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "release": "Jan 27, 2023",
+      "genres": ["Action", "Adventure"],
+      "chart": "#11 Top 2023",
+      "logoImg": "https://i.ibb.co/HqrWnsW/Dead-Space-2023.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Call of Duty: Modern Warfare II",
+      "clip": "https://media.rawg.io/media/stories-640/7da/7da805853aa403928f5155d0a24533e2.mp4",
+      "clipPictures": null,
+      "fullVideo": "https://youtu.be/r72GP1PIZa0",
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "release": "Oct 27, 2022",
+      "genres": ["Action", "Shooter"],
+      "chart": "#40 Top 2022",
+      "logoImg": "https://i.ibb.co/1fx7dW5/Call-of-Duty-Modern-Warfare-II.webp"
+    },
+    {
+      "id": 24,
+      "name": "Replaced",
+      "clip": null,
+      "clipPictures": [
+        "https://i.ibb.co/tz0z9sN/Replaced1.jpg",
+        "https://i.ibb.co/SXhkTp2/Replaced2.jpg",
+        "https://i.ibb.co/5njbhpH/Replaced3.webp",
+        "https://i.ibb.co/S7GxxtZ/Replaced4.jpg",
+        "https://i.ibb.co/YfNXqdN/Replaced5.webp",
+        "https://i.ibb.co/1XgCxgT/Replaced6.jpg",
+        "https://i.ibb.co/cNPWGD6/Replaced7.png"
+      ],
+      "fullVideo": "https://youtu.be/cWkOcpZEk4I",
+      "platforms": ["PC", "Xbox"],
+      "release": "Dec 31, 2022",
+      "genres": ["Action", "Platformer"],
+      "chart": "#87 Top 2022",
+      "logoImg": "https://i.ibb.co/WKDzmbR/Replaced.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Potion Craft: Alchemist Simulator",
+      "clip": null,
+      "clipPictures": [
+        "https://i.ibb.co/7RvsPz9/Potion-Craft-Alchemist-Simulator1.png",
+        "https://i.ibb.co/WgqRShW/Potion-Craft-Alchemist-Simulator2.webp",
+        "https://i.ibb.co/J38pLn1/Potion-Craft-Alchemist-Simulator3.webp",
+        "https://i.ibb.co/QmTJRtT/Potion-Craft-Alchemist-Simulator4.jpg",
+        "https://i.ibb.co/mGNC3fW/Potion-Craft-Alchemist-Simulator5.jpg",
+        "https://i.ibb.co/qNFTbJY/Potion-Craft-Alchemist-Simulator6.jpg",
+        "https://i.ibb.co/nfnJL82/Potion-Craft-Alchemist-Simulator7.jpg"
+      ],
+      "fullVideo": "https://youtu.be/JZeJsJevF8Q",
+      "platforms": ["PC"],
+      "release": "Dec 13, 2022",
+      "genres": ["Simulation", "Casual", "Indie"],
+      "chart": "#42 Top 2022",
+      "logoImg": "https://i.ibb.co/xG6Ltmw/Potion-Craft-Alchemist-Simulator.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Dead Island 2",
+      "clip": null,
+      "clipPictures": [
+        "https://i.ibb.co/8410Hy4/Dead-Island1.jpg",
+        "https://i.ibb.co/vdRcP1z/Dead-Island2.jpg",
+        "https://i.ibb.co/ykZgk20/Dead-Island3.jpg",
+        "https://i.ibb.co/ZTN7Gfm/Dead-Island4.jpg",
+        "https://i.ibb.co/ZGk2J36/Dead-Island5.jpg",
+        "https://i.ibb.co/9G9fSL1/Dead-Island6.jpg",
+        "https://i.ibb.co/bNtdM0X/Dead-Island7.jpg"
+      ],
+      "fullVideo": "https://youtu.be/Am8ET6CgJy8",
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "release": "Apr 28, 2023",
+      "genres": ["Action", "Adventure"],
+      "chart": "#10 Top 2023",
+      "logoImg": "https://i.ibb.co/dB7YN44/Dead-Island-2.webp"
+    },
+    {
+      "id": 27,
+      "name": "Marvel Snap",
+      "clip": "https://media.rawg.io/media/stories-640/583/58318ab01273b486d9516f1eb924cfc7.mp4",
+      "clipPictures": null,
+      "fullVideo": "https://youtu.be/GNuq6E3enZQ",
+      "platforms": ["PC", "iOS", "Android"],
+      "release": "Oct 18, 2022",
+      "genres": ["Strategy", "Casual", "Card"],
+      "chart": "#49 Top 2022",
+      "logoImg": "https://i.ibb.co/RT2rnFC/Marvel-Snap.webp"
+    },
+    {
+      "id": 28,
+      "name": "The Settlers - New Allies",
+      "clip": "https://media.rawg.io/media/stories-640/3bc/3bcec013b5c6ec213dc1c23f1dcd9bea.mp4",
+      "clipPictures": null,
+      "fullVideo": "https://youtu.be/6i8Fx_iicLQ",
+      "platforms": ["PC"],
+      "release": "Feb 17, 2023",
+      "genres": ["Strategy"],
+      "chart": "#13 Top 2023",
+      "logoImg": "https://i.ibb.co/pdr4qRq/The-Settlers-New-Allies.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Warhammer 40,000 Darktide",
+      "clip": "https://media.rawg.io/media/stories-640/abd/abd91172b44a8d6ceff805baf3938077.mp4",
+      "clipPictures": null,
+      "fullVideo": "https://youtu.be/2MNYZK0Sw9s",
+      "platforms": ["PC", "Xbox"],
+      "release": "Nov 30, 2022",
+      "genres": ["Action", "Shooter", "Adventure", "Indie"],
+      "chart": "#48 Top 2022",
+      "logoImg": "https://i.ibb.co/xhqFZMM/Warhammer-40-000-Darktide.jpg"
+    },
+    {
+      "id": 30,
+      "name": "Suicide Squad: Kill The Justice League",
+      "clip": "https://media.rawg.io/media/stories-640/057/0575fbd610c3121d54e66825b5edbd24.mp4",
+      "clipPictures": null,
+      "fullVideo": "https://youtu.be/KRKZ1ewc9f0",
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "release": "May 26, 2023",
+      "genres": ["Action"],
+      "chart": "#15 Top 2023",
+      "logoImg": "https://i.ibb.co/6BkzXKv/Wuicide-Squad-Kill-The-Justice-League.jpg"
+    },
+    {
+      "id": 31,
+      "name": "Somerville",
+      "clip": "https://media.rawg.io/media/stories-640/7a9/7a9c4a288b35b2f08d3d54947511c73d.mp4",
+      "clipPictures": null,
+      "fullVideo": "https://youtu.be/jcjnHHxHV3o",
+      "platforms": ["PC", "Xbox"],
+      "release": "Nov 15, 2022",
+      "genres": ["Action", "Adventure"],
+      "chart": "#51 Top 2022",
+      "logoImg": "https://i.ibb.co/Myv8SVc/Somerville.webp"
+    },
+    {
+      "id": 32,
+      "name": "Resident Evil 4",
+      "clip": null,
+      "clipPictures": [
+        "https://i.ibb.co/6JS4jGy/Resident-Evil1.jpg",
+        "https://i.ibb.co/dk2Ct5G/Resident-Evil2.jpg",
+        "https://i.ibb.co/qMSjtZN/Resident-Evil3.jpg",
+        "https://i.ibb.co/yn01xfk/Resident-Evil4.jpg",
+        "https://i.ibb.co/z69kKgz/Resident-Evil5.png",
+        "https://i.ibb.co/Y3kW9Jh/Resident-Evil6.jpg",
+        "https://i.ibb.co/nkNSSjv/Resident-Evil7.jpg"
+      ],
+      "fullVideo": "https://youtu.be/wlP02yvRLxA",
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "release": "Mar 24, 2023",
+      "genres": ["Action", "Adventure"],
+      "chart": "#14 Top 2023",
+      "logoImg": "https://i.ibb.co/7kSt5wN/Resident-Evil-4.webp"
+    },
+    {
+      "id": 33,
+      "name": "Undecember",
+      "clip": null,
+      "clipPictures": [
+        "https://i.ibb.co/9gpDsm4/Undecember1.jpg",
+        "https://i.ibb.co/DVgNjc0/Undecember2.jpg",
+        "https://i.ibb.co/xDVdNck/Undecember3.jpg",
+        "https://i.ibb.co/s608QKR/Undecember4.png",
+        "https://i.ibb.co/fXPCbGY/Undecember5.jpg",
+        "https://i.ibb.co/PQGKKdC/Undecember6.jpg",
+        "https://i.ibb.co/V2gQKvj/Undecember7.jpg"
+      ],
+      "fullVideo": "https://youtu.be/XYHIw8NcIXo",
+      "platforms": ["PC", "iOS", "Android"],
+      "release": "Oct 11, 2022",
+      "genres": ["Action", "RPG"],
+      "chart": "#54 Top 2022",
+      "logoImg": "https://i.ibb.co/0KwJTm1/Undecember.jpg"
+    },
+    {
+      "id": 34,
+      "name": "Marvel's Spider-Man 2",
+      "clip": null,
+      "clipPictures": [
+        "https://i.ibb.co/k68jr1s/Marvel-s-Spider-Man1.jpg",
+        "https://i.ibb.co/j8VQHW6/Marvel-s-Spider-Man2.webp",
+        "https://i.ibb.co/Krpfv93/Marvel-s-Spider-Man4.png",
+        "https://i.ibb.co/D985fT3/Marvel-s-Spider-Man5.jpg",
+        "https://i.ibb.co/wKsjJ1X/Marvel-s-Spider-Man6.png",
+        "https://i.ibb.co/JzKLsZW/Spider-Man3.jpg",
+        "https://i.ibb.co/MPjgNkZ/Spider-Man7.jpg"
+      ],
+      "fullVideo": "https://youtu.be/qIQ3xNqkVC4",
+      "platforms": ["PlayStation"],
+      "release": "Dec 31, 2023",
+      "genres": ["Action"],
+      "chart": "#16 Top 2023",
+      "logoImg": "https://i.ibb.co/8K7tQcg/Spider-man.jpg"
+    },
+    {
+      "id": 35,
+      "name": "Gotham Knights",
+      "clip": "https://media.rawg.io/media/stories-640/e80/e801964641a24c32ee665d4f2604c541.mp4",
+      "clipPictures": null,
+      "fullVideo": "https://youtu.be/IhVf_3TeTQE",
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "release": "Oct 21, 2022",
+      "genres": ["Action", "Adventure", "RPG"],
+      "chart": "#56 Top 2022",
+      "logoImg": "https://i.ibb.co/D74G0FN/Gotham-Knights.jpg"
+    },
+    {
+      "id": 36,
+      "name": "OXENFREE II: Lost Signals",
+      "clip": "https://media.rawg.io/media/stories-640/254/254956acc6ca29fb9c2c77bf47d6c399.mp4",
+      "clipPictures": null,
+      "fullVideo": "https://youtu.be/LH8dYVPVxfM",
+      "platforms": ["PC", "PlayStation", "Apple", "Nintendo"],
+      "release": "Dec 31, 2023",
+      "genres": ["Adventure", "Indie"],
+      "chart": "#18 Top 2023",
+      "logoImg": "https://i.ibb.co/pzhGLwh/OXENFREE-II-Lost-Signals.jpg"
+    },
+    {
+      "id": 37,
+      "name": "Signalis",
+      "clip": null,
+      "clipPictures": [
+        "https://i.ibb.co/w4R64q3/Signalis1.jpg",
+        "https://i.ibb.co/DLMF0VN/Signalis2.jpg",
+        "https://i.ibb.co/NWTZJKZ/Signalis3.jpg",
+        "https://i.ibb.co/FnvqBTc/Signalis4.png",
+        "https://i.ibb.co/yycSJcG/Signalis5.png",
+        "https://i.ibb.co/jwTZ86S/Signalis6.jpg",
+        "https://i.ibb.co/Kwtv04j/Signalis7.jpg"
+      ],
+      "fullVideo": "https://youtu.be/SFNRihUyo5o",
+      "platforms": ["PC", "PlayStation", "Xbox", "Nintendo"],
+      "release": "Oct 27, 2022",
+      "genres": ["Action", "Adventure", "Indie"],
+      "chart": "#64 Top 2022",
+      "logoImg": "https://i.ibb.co/RcnmSqw/Signalis.jpg"
+    },
+    {
+      "id": 38,
+      "name": "The Lord of the Rings: Gollum",
+      "clip": null,
+      "clipPictures": [
+        "https://i.ibb.co/jykGzr7/Gollum1.webp",
+        "https://i.ibb.co/xgMJNXY/Gollum2.jpg",
+        "https://i.ibb.co/c6CwJxJ/Gollum3.jpg",
+        "https://i.ibb.co/NV4CL0F/Gollum4.jpg",
+        "https://i.ibb.co/thDCrmr/Gollum5.jpg",
+        "https://i.ibb.co/41hWX8L/Gollum6.jpg",
+        "https://i.ibb.co/Bf5NhLg/Gollum7.jpg"
+      ],
+      "fullVideo": "https://youtu.be/YYrJdAdi1WI",
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "release": "Dec 31, 2023",
+      "genres": ["Action", "Adventure"],
+      "chart": "#19 Top 2023",
+      "logoImg": "https://i.ibb.co/RNdDNRG/The-Lord-of-the-Rings-Gollum.webp"
+    },
+    {
+      "id": 39,
+      "name": "Pentiment",
+      "clip": null,
+      "clipPictures": [
+        "https://i.ibb.co/rZzpGs9/Pentiment1.webp",
+        "https://i.ibb.co/Lnq2fJf/Pentiment2.png",
+        "https://i.ibb.co/k874DpW/Pentiment3.png",
+        "https://i.ibb.co/56Zn6Mt/Pentiment4.webp",
+        "https://i.ibb.co/fXYTvpC/Pentiment5.jpg",
+        "https://i.ibb.co/hVyqrWH/Pentiment6.jpg",
+        "https://i.ibb.co/6Dr9KZm/Pentiment7.jpg"
+      ],
+      "fullVideo": "https://youtu.be/vXq20gant-4",
+      "platforms": ["PC", "Xbox"],
+      "release": "Nov 14, 2022",
+      "genres": ["Adventure", "Casual"],
+      "chart": "#70 Top 2022",
+      "logoImg": "https://i.ibb.co/54Jhg6c/Pentiment.jpg"
+    },
+    {
+      "id": 40,
+      "name": "Redfall",
+      "clip": null,
+      "clipPictures": [
+        "https://i.ibb.co/1nMCpHr/Redfall1.jpg",
+        "https://i.ibb.co/Byf70Ky/Redfall2.jpg",
+        "https://i.ibb.co/k6N81Zc/Redfall3.jpg",
+        "https://i.ibb.co/g3x1xBB/Redfall4.jpg",
+        "https://i.ibb.co/QM1hqmQ/Redfall5.jpg",
+        "https://i.ibb.co/VC6LJ7k/Redfall6.jpg",
+        "https://i.ibb.co/LPnZnrz/Redfall7.png"
+      ],
+      "fullVideo": "https://youtu.be/IpY_IMjT9Ik",
+      "platforms": ["PC", "Xbox"],
+      "release": "Jun 30, 2023",
+      "genres": ["Action", "Shooter"],
+      "chart": "#17 Top 2023",
+      "logoImg": "https://i.ibb.co/4Sq7V8b/Redfall.jpg"
+    }
+  ]
 }

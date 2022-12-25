@@ -16,6 +16,7 @@ export const PlayerBackground: FC<IPlayerVideoBGDProps> = ({ ...props }) => {
   })
   const playFullVideoBtn = cn(styles.playFullVideoBtn, {
     [styles.playFullVideoBtnActive]: props.currentPlayVideo === props.gameItem.id,
+    [styles.playFullPicturesBtnActive]: props.gameItem.clip === null,
   })
   /// styles ///
 
@@ -25,14 +26,12 @@ export const PlayerBackground: FC<IPlayerVideoBGDProps> = ({ ...props }) => {
       <div className={gameLogoPlaySVG}>
         {props.gameItem.clip !== null ? <Play /> : <Pictures />}
       </div>
-      {props.gameItem.clip !== null && (
-        <div
-          className={playFullVideoBtn}
-          onClick={() => props.setUrlPlayFullVideo(props.gameItem.fullVideo)}
-        >
-          <PlayYouTubeBtn /> Play full video
-        </div>
-      )}
+      <div
+        className={playFullVideoBtn}
+        onClick={() => props.setUrlPlayFullVideo(props.gameItem.fullVideo)}
+      >
+        <PlayYouTubeBtn /> Play full trailer
+      </div>
     </>
   )
 }

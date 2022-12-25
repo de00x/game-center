@@ -10,4 +10,4 @@ export { getPizzas } from "./getPizzas";
 export { getRolls } from "./getRolls";
 export { getSushi } from "./getSushi";
 export { getSets } from "./getSets";
-export { getGamesPage_1 } from "./getGamesPage_1";
+export { getGamePages } from "./getGamePages";

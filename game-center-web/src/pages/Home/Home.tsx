@@ -8,7 +8,7 @@ import { IGameCard } from './types/Home.types'
 import styles from './styles/Home.module.scss'
 import './styles/index.scss'
 import cn from 'classnames'
-import axios from 'axios'
+import axios, { AxiosResponse } from 'axios'
 import {
   AdditionalyInfoItem,
   PlayerBackground,
@@ -23,11 +23,25 @@ export const Home: FC = (): JSX.Element => {
   const [gameCard, setGameCard] = useState<IGameCard[]>([])
 
   useEffect(() => {
+    localStorage.setItem('currentGamePage', '1')
+    const currentGamePage = Number(localStorage.getItem('currentGamePage'))
     axios
-      .get('/gamePages')
+      .get(`/gamePages/?currentPage=${currentGamePage !== null ? currentGamePage : 1}`)
       .then((res) => setGameCard(res.data))
       .catch((err) => console.log('err', err))
   }, [])
+
+  const downloadNextGamePage = (): void => {
+    const currentGamePage = Number(localStorage.getItem('currentGamePage'))
+    axios
+      .get(`/gamePages/?currentPage=${currentGamePage !== null ? currentGamePage + 1 : 1}`)
+      .then((res) => responseNextGamePage(res))
+      .catch((err) => console.log('err', err))
+    const responseNextGamePage = (res: AxiosResponse): void => {
+      setGameCard([...gameCard, ...res.data])
+      localStorage.setItem('currentGamePage', '2')
+    }
+  }
 
   return (
     <div className={styles.homeContainer}>
@@ -99,6 +113,9 @@ export const Home: FC = (): JSX.Element => {
             )}
           </div>
         ))}
+      </div>
+      <div className={styles.btnLoadMoreContainer}>
+        <button onClick={downloadNextGamePage}>Load more</button>
       </div>
     </div>
   )

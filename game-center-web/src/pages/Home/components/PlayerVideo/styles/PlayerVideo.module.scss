@@ -37,12 +37,13 @@
   display: flex;
   position: absolute;
   align-items: center;
+  z-index: 5;
   bottom: 10px;
   right: 10px;
   font-size: 10px;
   padding: 0.2rem 0.5rem;
   border-radius: 0.3rem;
-  border: 0.5px solid rgba(255, 255, 255, 0);
+  border: 0.1px solid rgba(255, 255, 255, 0);
   background-color: #171616b4;
   transition: 0s opacity ease-in-out;
   opacity: 0%;
@@ -56,8 +57,12 @@
   transition: 0.5s opacity ease-in-out, 0.2s border-color ease-in-out;
   cursor: pointer;
   &:hover {
-    border-color: rgb(113, 111, 111);
+    border-color: rgb(199, 193, 193);
   }
+}
+.playFullPicturesBtnActive {
+  bottom: auto;
+  top: 10px;
 }
 .itemPlayer {
   width: 100%;

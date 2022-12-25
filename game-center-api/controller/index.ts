@@ -13,7 +13,7 @@ import {
   getRolls,
   getSushi,
   getSets,
-  getGamesPage_1,
+  getGamePages,
 } from "./get";
 import {
   createDeliveryAddress,
@@ -38,7 +38,7 @@ export const Controller = {
     getRolls,
     getSushi,
     getSets,
-    getGamesPage_1,
+    getGamePages,
   },
   delete: {
     deleteAddress,
