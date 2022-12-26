@@ -1,8 +1,8 @@
 import { ReactComponent as BestOfTheYear } from './img/BestOfTheYear.svg'
 import { ReactComponent as PopularIn2021 } from './img/PopularIn2021.svg'
 import { ReactComponent as AllTimeTop250 } from './img/AllTimeTop250.svg'
-import { FC } from 'react'
 import styles from './styles/Top.module.scss'
+import { FC } from 'react'
 
 export const Top: FC = (): JSX.Element => {
   return (

@@ -5,9 +5,9 @@ import { ReactComponent as Android } from './img/Android.svg'
 import { ReactComponent as ShowAll } from './img/ShowAll.svg'
 import { ReactComponent as IOS } from './img/IOS.svg'
 import { ReactComponent as PC } from './img/PC.svg'
+import styles from './styles/Platforms.module.scss'
 import { FC, useState } from 'react'
 import cn from 'classnames'
-import styles from './styles/Platforms.module.scss'
 
 export const Platforms: FC = (): JSX.Element => {
   const [showAllPlatforms, setShowAllPlatforms] = useState(false)

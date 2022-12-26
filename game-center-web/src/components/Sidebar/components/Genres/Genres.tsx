@@ -1,16 +1,16 @@
-import { FC, useState } from 'react'
 import { ReactComponent as ShowAll } from './img/ShowAll.svg'
-import cn from 'classnames'
 import styles from './styles/Genres.module.scss'
+import { FC, useState } from 'react'
+import cn from 'classnames'
 import {
-  ActionImg,
   AdventureImg,
+  StrategyImg,
+  ShooterImg,
+  ActionImg,
   PuzzleImg,
   RacingImg,
-  RPGImg,
-  ShooterImg,
   SportsImg,
-  StrategyImg,
+  RPGImg,
 } from './img'
 
 export const Genres: FC = (): JSX.Element => {

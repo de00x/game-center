@@ -2,8 +2,8 @@ import { ReactComponent as Last30Days } from './img/Last30Days.svg'
 import { ReactComponent as ReleaseCal } from './img/ReleaseCal.svg'
 import { ReactComponent as ThisWeek } from './img/ThisWeek.svg'
 import { ReactComponent as NextWeek } from './img/NextWeek.svg'
-import { FC } from 'react'
 import styles from './styles/NewReleases.module.scss'
+import { FC } from 'react'
 
 export const NewReleases: FC = (): JSX.Element => {
   return (

@@ -1,9 +1,9 @@
+import InputSearch from './components/InputSearch/InputSearch'
 import { CSSTransition } from 'react-transition-group'
+import styles from './styles/Header.module.scss'
 import { FC, useState } from 'react'
 import { ratedImg } from './img/img'
 import './styles/index.scss'
-import styles from './styles/Header.module.scss'
-import InputSearch from './components/InputSearch/InputSearch'
 
 const otherMenuPoints = [
   'Leaderboard',
@@ -30,7 +30,7 @@ export const Header: FC = (): JSX.Element => {
       <div className={styles.headerApi}>API</div>
       <div
         className={styles.headerOtherMenuContainer}
-        onMouseOver={() => setIsOpenOtherFlyMenu(true)}
+        onMouseEnter={() => setIsOpenOtherFlyMenu(true)}
       >
         <CSSTransition
           in={isOpenOtherFlyMenu}

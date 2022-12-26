@@ -1,0 +1,1 @@
+export { SkeletonHome } from './SkeletonHome'

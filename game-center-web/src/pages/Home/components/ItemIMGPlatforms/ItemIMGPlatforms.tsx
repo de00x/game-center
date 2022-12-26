@@ -5,16 +5,15 @@ import { ReactComponent as XboxOne } from './img/XboxOne.svg'
 import { ReactComponent as Android } from './img/Android.svg'
 import { ReactComponent as Apple } from './img/Apple.svg'
 import { ReactComponent as Linux } from './img/Linux.svg'
+import styles from './styles/ItemPlatforms.module.scss'
 import { ReactComponent as IOS } from './img/IOS.svg'
 import { ReactComponent as PC } from './img/PC.svg'
 import { FC, memo } from 'react'
-import styles from './styles/ItemPlatforms.module.scss'
+import IMGPlatformsControllers from './services/IMGPlatformsControllers'
 
 const ItemIMGPlatforms: FC<IItemPlatformsProps> = ({ ...props }): JSX.Element => {
-  const gameCardPlatforms = (platforms: string[], currentPlatofrm: string): string | undefined => {
-    const result = platforms.find((platform) => platform === currentPlatofrm)
-    if (result !== undefined) return result
-  }
+  const { gameCardPlatforms } = IMGPlatformsControllers()
+
   return (
     <div className={styles.itemPlatforms}>
       {gameCardPlatforms(props.gameItem.platforms, 'PC') === 'PC' && <PC />}

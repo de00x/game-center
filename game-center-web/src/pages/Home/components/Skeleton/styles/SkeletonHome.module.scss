@@ -1,0 +1,24 @@
+.skeletonHome {
+  height: 370px;
+  border-radius: 1rem;
+  background: linear-gradient(
+    149deg,
+    rgb(114, 117, 117) 0%,
+    rgb(84, 83, 84) 42%,
+    rgb(47, 46, 47) 72%,
+    rgb(24, 23, 24) 100%
+  );
+  animation: gradient 1s infinite linear; // 10s - скорость анимации
+  background-size: 1000%; // Можно менять и подбирать интенсивность
+}
+@keyframes gradient {
+  0% {
+    background-position: 80% 0%;
+  }
+  50% {
+    background-position: 20% 100%;
+  }
+  100% {
+    background-position: 80% 0%;
+  }
+}

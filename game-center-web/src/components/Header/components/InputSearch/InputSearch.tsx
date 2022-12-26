@@ -1,9 +1,8 @@
+import InputSearchControllers from './services/InputSearchControllers'
+import InputSearchService from './services/InputSearch.service'
 import { ReactComponent as Search } from './img/search.svg'
-import axios, { AxiosResponse } from 'axios'
 import styles from './styles/InputSearch.module.scss'
-import { FC, memo, useEffect, useState } from 'react'
-
-const apiKey = '4089d1fab1a545d5997b89198910cfa4'
+import { FC, memo, useState } from 'react'
 
 const InputSearch: FC = (): JSX.Element => {
   const [visibleHotKeyInput, setVisibleHotKeyInput] = useState(true)
@@ -11,22 +10,13 @@ const InputSearch: FC = (): JSX.Element => {
   const [searchInputData, setSearchInputData] = useState('')
   const [isFocusInput, setIsFocusInput] = useState(false)
 
-  useEffect(() => {
-    axios
-      .get(`https://api.rawg.io/api/games?key=${apiKey}`)
-      .then((res) => updateCurrSearchGames(res))
-      .catch((err) => console.log('err', err))
-  }, [])
+  /// controllers ///
+  const { updateCurrSearchGames } = InputSearchControllers({ setCurrentSearchGames })
+  /// controllers ///
 
-  const updateCurrSearchGames = (res: AxiosResponse): void => {
-    let response: string = res.data.count.toString()
-    const strFirst: string = response.slice(0, -3)
-    const strLast: string = response.slice(-3)
-    response = strFirst + ',' + strLast
-    response.length > 0
-      ? setCurrentSearchGames(`Search ${response} games`)
-      : setCurrentSearchGames('Search 840,735 games')
-  }
+  /// useEffects ///
+  InputSearchService.GetCurrentSearchGames(updateCurrSearchGames)
+  /// useEffects ///
 
   return (
     <div className={styles.headerInputContainer}>

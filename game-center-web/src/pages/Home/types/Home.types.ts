@@ -1,4 +1,4 @@
-export interface IGameCard {
+interface IGameCard {
   clipPictures: string[] | null
   clip: string | null
   platforms: string[]
@@ -10,3 +10,9 @@ export interface IGameCard {
   name: string
   id: number
 }
+interface IHomeControllersProps {
+  gameCard: IGameCard[]
+  setGameCard: React.Dispatch<React.SetStateAction<IGameCard[]>>
+}
+
+export type { IGameCard, IHomeControllersProps }

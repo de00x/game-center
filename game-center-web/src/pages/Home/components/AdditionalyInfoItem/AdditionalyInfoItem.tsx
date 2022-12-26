@@ -1,8 +1,8 @@
 import { IAdditionalyInfoProps } from './types/AdditionalyInfo.types'
 import { ReactComponent as ArrowRight } from './img/ArrowRight.svg'
-import { FC } from 'react'
-import cn from 'classnames'
 import styles from './styles/AdditionalyInfo.module.scss'
+import cn from 'classnames'
+import { FC } from 'react'
 
 export const AdditionalyInfoItem: FC<IAdditionalyInfoProps> = ({ ...props }): JSX.Element => {
   return (
