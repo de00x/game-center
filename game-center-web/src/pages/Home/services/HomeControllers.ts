@@ -3,14 +3,14 @@ import axios, { AxiosResponse } from 'axios'
 
 const HomeControllers = ({ ...props }: IHomeControllersProps) => {
   const downloadNextGamePage = () => {
-    const currentGamePage = Number(localStorage.getItem('currentGamePage'))
+    const currentDownloadPage = Number(localStorage.getItem('currentDownloadPage'))
     axios
-      .get(`/gamePages/?currentPage=${currentGamePage !== null ? currentGamePage + 1 : 1}`)
+      .get(`/gamePages/?currentPage=${currentDownloadPage !== null ? currentDownloadPage + 1 : 1}`)
       .then((res) => responseNextGamePage(res))
       .catch((err) => console.log('err', err))
     const responseNextGamePage = (res: AxiosResponse) => {
       props.setGameCard([...props.gameCard, ...res.data])
-      localStorage.setItem('currentGamePage', '2')
+      localStorage.setItem('currentDownloadPage', '2')
     }
   }
   return { downloadNextGamePage }

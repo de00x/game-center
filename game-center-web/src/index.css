@@ -13,8 +13,7 @@ a {
   text-decoration: none;
 }
 body {
+  max-width: 1920px;
+  margin: 0px auto;
   background-color: rgb(17, 17, 17);
-}
-.appMainWrapper {
-  display: flex;
 }

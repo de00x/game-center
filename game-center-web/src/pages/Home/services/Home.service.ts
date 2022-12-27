@@ -8,10 +8,10 @@ const HomeService = {
     setIsLoadingPage: React.Dispatch<React.SetStateAction<boolean>>
   ) {
     useEffect(() => {
-      localStorage.setItem('currentGamePage', '1')
-      const currentGamePage = Number(localStorage.getItem('currentGamePage'))
+      localStorage.setItem('currentDownloadPage', '1')
+      const currentDownloadPage = Number(localStorage.getItem('currentDownloadPage'))
       axios
-        .get(`/gamePages/?currentPage=${currentGamePage !== null ? currentGamePage : 1}`)
+        .get(`/gamePages/?currentPage=${currentDownloadPage !== null ? currentDownloadPage : 1}`)
         .then((res) => {
           setGameCard(res.data)
           setIsLoadingPage(false)

@@ -1,5 +1,4 @@
-import { Sidebar } from './components/Sidebar'
-import { Header } from './components/Header'
+import { Route, Routes } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { FC } from 'react'
 import './index.css'
@@ -7,11 +6,10 @@ import './index.css'
 const App: FC = (): JSX.Element => {
   return (
     <>
-      <Header />
-      <div className="appMainWrapper">
-        <Sidebar />
-        <Home />
-      </div>
+      <Routes>
+        <Route path="*" element={<div>Page not Found</div>} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
     </>
   )
 }
