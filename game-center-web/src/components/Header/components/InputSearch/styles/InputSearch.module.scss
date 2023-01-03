@@ -9,7 +9,7 @@
     height: 3rem;
     padding-left: 2.5rem;
     border-radius: 5rem;
-    background-color: rgb(45, 45, 45);
+    background-color: hsla(0, 0%, 100%, 0.16);
     border: none;
     transition: 0.25s background-color ease-in-out;
     &:hover {
@@ -44,10 +44,11 @@
   right: 7rem;
   letter-spacing: 1.5px;
   border-radius: 0.2rem;
-  padding: 0.05rem 0.7rem;
-  font-size: 15px;
-  color: rgb(119, 119, 119);
-  border: 1px solid rgb(119, 119, 119);
+  padding: 0rem 0.6rem;
+  font-size: 12px;
+  font-weight: 200;
+  color: hsla(0, 0%, 100%, 0.5);
+  border: 1px solid hsla(0, 0%, 100%, 0.3);
 }
 .inputHotKeyEnter {
   right: 1.5rem;
@@ -57,7 +58,7 @@
   position: absolute;
   align-items: center;
   justify-content: center;
-  right: 6rem;
+  right: 5.75rem;
   font-size: 15px;
-  color: rgb(119, 119, 119);
+  color: hsla(0, 0%, 100%, 0.5);
 }

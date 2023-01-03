@@ -1,6 +1,6 @@
-import InputSearch from './components/InputSearch/InputSearch'
 import { CSSTransition } from 'react-transition-group'
 import styles from './styles/Header.module.scss'
+import { InputSearch } from './components'
 import { FC, useState } from 'react'
 import { ratedImg } from './img/img'
 import './styles/index.scss'

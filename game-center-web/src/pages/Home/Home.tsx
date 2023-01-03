@@ -1,4 +1,3 @@
-import ItemIMGPlatforms from './components/ItemIMGPlatforms/ItemIMGPlatforms'
 import { ReactComponent as Wishlist } from './img/Wishlist.svg'
 import { ReactComponent as Ellipsis } from './img/Ellipsis.svg'
 import HomeControllers from './services/HomeControllers'
@@ -14,6 +13,7 @@ import './styles/index.scss'
 import cn from 'classnames'
 import {
   AdditionalyInfoItem,
+  ItemIMGPlatforms,
   PlayerBackground,
   PlayerPictures,
   PlayFullVideo,

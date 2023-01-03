@@ -1,0 +1,23 @@
+.currentDirectory {
+  display: flex;
+  width: 60%;
+  & div,
+  a {
+    letter-spacing: 1.7px;
+    font-weight: 300;
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 0.4);
+    transition: 0.2s color ease-in-out;
+  }
+  & div:nth-child(1),
+  :nth-child(3) {
+    cursor: pointer;
+    &:hover {
+      color: #fff;
+    }
+  }
+  & div:nth-child(2),
+  :nth-child(4) {
+    margin: 0rem 0.5rem;
+  }
+}
