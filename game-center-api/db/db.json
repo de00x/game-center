@@ -23,6 +23,13 @@
       "recommended": 42,
       "meh": 15,
       "skip": 22,
+      "allPlatforms": [
+        "PC",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox Series S/X",
+        "Xbox One"
+      ],
       "developer": "Hardsuit Labs",
       "publisher": "Paradox Interactive",
       "ageRating": "Not rated",
