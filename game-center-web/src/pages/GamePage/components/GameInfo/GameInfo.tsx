@@ -3,10 +3,15 @@ import { FC } from 'react'
 import {
   GameBtnsReviewComment,
   GamePlatformsPlaytime,
+  GameInfoVideoPlayer,
   GameSysRequirements,
+  GameInfoPhotoAlbum,
   GameButtonsRating,
   GameButtonsAddTo,
+  GameContributors,
   GameRatingScale,
+  EditTheGameInfo,
+  WhereToBuyGame,
   AboutTheGame,
   GameWebsite,
   GameName,
@@ -26,7 +31,13 @@ export const GameInfo: FC = (): JSX.Element => {
         <GameWebsite />
         <GameSysRequirements />
       </div>
-      <div className={styles.gameInfoBlockRight}>2</div>
+      <div className={styles.gameInfoBlockRight}>
+        <GameInfoVideoPlayer />
+        <GameInfoPhotoAlbum />
+        <EditTheGameInfo />
+        <WhereToBuyGame />
+        <GameContributors />
+      </div>
     </div>
   )
 }

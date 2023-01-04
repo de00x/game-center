@@ -7,5 +7,6 @@
   width: 60%;
 }
 .gameInfoBlockRight {
-  width: 40%;
+  width: calc(40% - 2rem);
+  margin-left: 2rem;
 }

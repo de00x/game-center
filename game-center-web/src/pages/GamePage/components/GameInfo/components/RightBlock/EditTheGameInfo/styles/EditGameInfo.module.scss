@@ -1,0 +1,28 @@
+.editGameInfoBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  height: 3rem;
+  margin-top: 2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+  transition: 0.2s background-color ease-in-out;
+  & svg {
+    margin-right: 0.5rem;
+  }
+  &:hover {
+    background-color: #acacac;
+  }
+}
+.lastModified {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 0.3rem;
+  color: #6e6e6e;
+}

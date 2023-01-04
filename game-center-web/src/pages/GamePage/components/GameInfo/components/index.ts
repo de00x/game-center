@@ -7,3 +7,9 @@ export { default as GameRatingScale } from './LeftBlock/GameRatingScale/GameRati
 export { default as AboutTheGame } from './LeftBlock/AboutTheGame/AboutTheGame'
 export { default as GameWebsite } from './LeftBlock/GameWebsite/GameWebsite'
 export { default as GameName } from './LeftBlock/GameName/GameName'
+/// Right Block ///
+export { default as GameInfoVideoPlayer } from './RightBlock/GameInfoVideoPlayer/GameInfoVideoPlayer'
+export { default as GameInfoPhotoAlbum } from './RightBlock/GameInfoPhotoAlbum/GameInfoPhotoAlbum'
+export { default as GameContributors } from './RightBlock/GameContributors/GameContributors'
+export { default as EditTheGameInfo } from './RightBlock/EditTheGameInfo/EditTheGameInfo'
+export { default as WhereToBuyGame } from './RightBlock/WhereToBuyGame/WhereToBuyGame'

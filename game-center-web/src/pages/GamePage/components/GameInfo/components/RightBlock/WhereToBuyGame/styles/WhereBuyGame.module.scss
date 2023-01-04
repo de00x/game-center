@@ -1,0 +1,38 @@
+.whereBuyGameText {
+  margin-top: 1.5rem;
+  font-size: 15px;
+  font-weight: 500;
+  color: #6e6e6e;
+}
+.whereBuyGameContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  margin-top: 1rem;
+  & div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: hsl(0deg 0% 74%);
+    background-color: hsla(0deg, 0%, 100%, 0.1);
+    transition: 0.2s background-color ease-in-out, 0.2s color ease-in-out;
+    & svg {
+      fill: hsl(0deg 0% 74%);
+      margin-left: 0.5rem;
+      transition: 0.2s fill ease-in-out;
+    }
+    &:hover {
+      color: #000;
+      background-color: #fff;
+      & svg {
+        fill: #000;
+      }
+    }
+  }
+}

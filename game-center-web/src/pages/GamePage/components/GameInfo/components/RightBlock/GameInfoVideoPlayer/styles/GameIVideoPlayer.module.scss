@@ -1,0 +1,59 @@
+.gameInfoVPlayerContainer {
+  display: flex;
+  position: relative;
+}
+.itemPlayer {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+.btnPlayFullVideo {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  bottom: 10px;
+  right: 10px;
+  font-weight: 300;
+  font-size: 11px;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.402);
+  transition: 0.2s border-color ease-in-out;
+  border: 0.1px solid rgba(188, 187, 187, 0);
+  & svg {
+    margin-right: 0.5rem;
+  }
+  &:hover {
+    border-color: rgb(188, 187, 187);
+  }
+}
+.playVideoSVG {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  width: 3.5rem;
+  height: 3.5rem;
+  bottom: 15px;
+  left: 25px;
+  cursor: pointer;
+  border-radius: 3rem;
+  background-color: rgba(0, 0, 0, 0.402);
+  & svg {
+    margin-left: 0.2rem;
+  }
+}
+.playVideoImageBGD {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  & img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+  }
+}

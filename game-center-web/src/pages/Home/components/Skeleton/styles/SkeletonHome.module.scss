@@ -8,8 +8,8 @@
     rgb(47, 46, 47) 72%,
     rgb(24, 23, 24) 100%
   );
-  animation: gradient 1s infinite linear; // 10s - скорость анимации
-  background-size: 1000%; // Можно менять и подбирать интенсивность
+  animation: gradient 1s infinite linear; // Скорость анимации
+  background-size: 1000%; // Интенсивность
 }
 @keyframes gradient {
   0% {
