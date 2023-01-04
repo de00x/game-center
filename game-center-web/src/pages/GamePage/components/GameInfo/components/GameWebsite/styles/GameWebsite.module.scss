@@ -1,0 +1,15 @@
+.websiteThisGameText {
+  margin-top: 1rem;
+  color: rgb(81, 79, 79);
+}
+.websiteThisGameLink {
+  margin-top: 1rem;
+  & a {
+    color: #fff;
+    text-decoration: underline;
+    transition: 0.2s color ease-in-out;
+    &:hover {
+      color: rgb(81, 79, 79);
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.aboutTheGame {
+  margin-top: 1.5rem;
+}
+.aboutTheGameHeaderText {
+  font-size: 26px;
+  font-weight: 500;
+}
+.aboutTheGameText {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.aboutGameTextShowMore {
+  margin-left: 0.3rem;
+}
+.aboutGameTextShowMoreBtn {
+  font-size: 14px;
+  border-radius: 0.2rem;
+  padding: 0.15rem 0.4rem;
+  color: #000;
+  cursor: pointer;
+  background-color: #fff;
+  transition: 0.15s background-color ease-in-out;
+  &:hover {
+    background-color: rgb(174, 171, 171);
+  }
+}
+.additionallyInfoAboutGame {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.additInfoGameLeftBlock {
+  width: 50%;
+}
+.additInfoGameHeader {
+  font-size: 17px;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  color: rgb(81, 79, 79);
+}
+.additInfoPlatforms,
+.additInfoGenres {
+  min-height: 3rem;
+  & span {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 0.2s color ease-in-out;
+    &:not(:last-child) {
+      margin-right: 0.3rem;
+      &::after {
+        content: ',';
+      }
+    }
+    &:hover {
+      color: rgb(106, 104, 104);
+    }
+  }
+}
+.additInfoReleaseDate,
+.additInfoDeveloper {
+  min-height: 2rem;
+}
+.additInfoPublisher,
+.additInfoAgeRating {
+  min-height: 2rem;
+}
+.additInfoPublisher,
+.additInfoDeveloper {
+  & span {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 0.2s color ease-in-out;
+    &:hover {
+      color: rgb(106, 104, 104);
+    }
+  }
+}
+.additInfoGameRightBlock {
+  width: 50%;
+  margin-left: 1rem;
+}

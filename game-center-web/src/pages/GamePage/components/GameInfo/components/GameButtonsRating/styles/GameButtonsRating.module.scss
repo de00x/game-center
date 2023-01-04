@@ -1,0 +1,44 @@
+.gameRating {
+  display: flex;
+  margin-top: 2rem;
+}
+.categoryRating,
+.categoryGenres,
+.totalRating {
+  & div:nth-child(1) {
+    height: 1.7rem;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+  }
+  & span:nth-child(2) {
+    font-size: 11px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: rgb(118, 115, 115);
+    border-bottom: 1px solid rgb(118, 115, 115);
+    transition: 0.2s color ease-in-out;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+.categoryRating {
+  padding-right: 2rem;
+}
+.categoryGenres {
+  border-right: 1px solid rgb(118, 115, 115);
+  border-left: 1px solid rgb(118, 115, 115);
+  padding: 0rem 2rem;
+  & div:nth-child(1) {
+    font-size: 26px;
+    font-weight: 700;
+  }
+}
+.totalRating {
+  padding-left: 2rem;
+  & div:nth-child(1) {
+    font-size: 26px;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,40 @@
+.btnReview__Comment {
+  display: flex;
+  margin-top: 1.5rem;
+}
+.btnReview,
+.btnComment {
+  display: flex;
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.3rem;
+  color: hsla(0, 0%, 100%, 0.5);
+  background-color: hsla(0, 0%, 100%, 0.1);
+  transition: 0.15s background-color ease-in-out, 0.15s color ease-in-out;
+  & svg {
+    margin-right: 0.5rem;
+    fill: hsla(0, 0%, 100%, 0.5);
+    transition: 0.15s fill ease-in-out;
+  }
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    & svg {
+      fill: #000;
+    }
+  }
+}
+.btnComment {
+  margin-left: 1.5rem;
+  & svg {
+    fill: hsla(0, 0%, 100%, 0);
+    stroke: hsla(0, 0%, 100%, 0.5);
+    transition: 0.15s stroke ease-in-out;
+  }
+  &:hover {
+    & svg {
+      stroke: hsl(0, 1%, 55%);
+      fill: hsla(0, 0%, 100%, 0);
+    }
+  }
+}

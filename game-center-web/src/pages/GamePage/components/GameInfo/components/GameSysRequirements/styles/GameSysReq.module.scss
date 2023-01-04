@@ -1,0 +1,20 @@
+.systemRequirements {
+  margin-top: 1.5rem;
+  & div:nth-child(1) {
+    margin-bottom: 1rem;
+    font-size: 28px;
+    font-weight: 500;
+  }
+}
+.systemReqShowMoreBtn {
+  cursor: pointer;
+  transition: 0.2s color ease-in-out;
+  &:hover {
+    color: rgb(81, 79, 79);
+  }
+}
+.systemReqText {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
