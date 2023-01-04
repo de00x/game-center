@@ -5,8 +5,6 @@ import { ReactComponent as Plus } from './img/Plus.svg'
 import { FC, memo } from 'react'
 
 const GameButtonsAddTo: FC = (): JSX.Element => {
-  console.log('pidor')
-
   return (
     <div className={styles.gameButtonsAddTo}>
       <div className={styles.btnAddMyGames}>
