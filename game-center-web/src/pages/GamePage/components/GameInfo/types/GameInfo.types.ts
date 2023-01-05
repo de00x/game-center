@@ -11,7 +11,7 @@ export interface IIGameInfo {
   website: string
   genres: string[]
   buyInGOG: string
-  playtime: string
+  playtime: number
   fullVideo: string
   publisher: string
   developer: string

@@ -28,9 +28,11 @@ const GamePlatformsPlaytime: FC<IGamePlatPlaytimeProps> = ({ ...props }): JSX.El
         )}
         {getCurrentImgPlatforms(props.gameInfo.platforms, 'Linux') === 'Linux' && <Linux />}
       </div>
-      <div className={styles.averagePlaytime}>
-        AVERAGE PLAYTIME: {props.gameInfo.playtime} HOURS
-      </div>
+      {props.gameInfo.playtime !== 0 && (
+        <div className={styles.averagePlaytime}>
+          AVERAGE PLAYTIME: {props.gameInfo.playtime} HOURS
+        </div>
+      )}
     </div>
   )
 }

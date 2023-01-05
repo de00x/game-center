@@ -40,7 +40,7 @@ export const GameInfo: FC = (): JSX.Element => {
             <GameRatingScale gameInfo={gameInfo} />
             <GameBtnsReviewComment />
             <AboutTheGame gameInfo={gameInfo} />
-            <GameWebsite gameWebSite={gameInfo.website} />
+            {gameInfo.website !== '' && <GameWebsite gameWebSite={gameInfo.website} />}
             <GameSysRequirements systemReqPC={gameInfo.systemRequirementsPC} />
           </div>
           <div className={styles.gameInfoBlockRight}>

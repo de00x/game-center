@@ -9,7 +9,6 @@ export class DbModel {
       .get("all-games")
       .slice(0, currentGamePage)
       .value();
-    console.log("currentQuantityGames", currentQuantityGames);
 
     return currentQuantityGames;
   }
