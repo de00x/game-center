@@ -8,7 +8,7 @@ const GameWebsite: FC<IGameWebsiteProps> = ({ ...props }): JSX.Element => {
       <div className={styles.websiteThisGameText}>Website</div>
       <div className={styles.websiteThisGameLink}>
         <a href={props.gameWebSite} target={'_blank'} rel="noreferrer">
-          https://www.bloodlines2.com
+          {props.gameWebSite}
         </a>
       </div>
     </>

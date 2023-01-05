@@ -13,10 +13,11 @@ export class DbModel {
   }
 
   public static async getGameInfoPage(currentGameInfoPage: number) {
-    const arrayAllGames = await db.get("all-games").value();
-    const result = arrayAllGames.filter(
-      (game) => game.id === currentGameInfoPage
-    );
-    return result;
+    const currentGame = db
+      .get("all-games")
+      .filter((game) => game.id === currentGameInfoPage)
+      .value();
+
+    return currentGame;
   }
 }
