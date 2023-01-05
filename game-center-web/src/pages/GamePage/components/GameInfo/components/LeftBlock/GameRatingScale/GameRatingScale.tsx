@@ -17,28 +17,36 @@ const GameRatingScale: FC<IGameRatingScaleProps> = ({ ...props }): JSX.Element =
           style={{ width: `${props.gameInfo.exceptional}%` }}
           onMouseEnter={() => setRatingScaleActive(1)}
         >
-          <img src={ratingImg} className={styles.scaleBackgroundRatingImage} alt="ratingImage" />
+          {props.gameInfo.exceptional > 9 && (
+            <img src={ratingImg} className={styles.scaleBackgroundRatingImage} alt="ratingImage" />
+          )}
         </div>
         <div
           className={cn({ [styles.ratingScaleActive]: ratingScaleActive === 2 })}
           style={{ width: `${props.gameInfo.recommended}%` }}
           onMouseEnter={() => setRatingScaleActive(2)}
         >
-          <img src={likeImg} className={styles.scaleBackgroundLikeImage} alt="likeImage" />
+          {props.gameInfo.recommended > 9 && (
+            <img src={likeImg} className={styles.scaleBackgroundLikeImage} alt="likeImage" />
+          )}
         </div>
         <div
           className={cn({ [styles.ratingScaleActive]: ratingScaleActive === 3 })}
           style={{ width: `${props.gameInfo.meh}%` }}
           onMouseEnter={() => setRatingScaleActive(3)}
         >
-          <img src={mehImg} className={styles.scaleBackgroundMehImage} alt="mehImage" />
+          {props.gameInfo.meh > 9 && (
+            <img src={mehImg} className={styles.scaleBackgroundMehImage} alt="mehImage" />
+          )}
         </div>
         <div
           className={cn({ [styles.ratingScaleActive]: ratingScaleActive === 4 })}
           style={{ width: `${props.gameInfo.skip}%` }}
           onMouseEnter={() => setRatingScaleActive(4)}
         >
-          <img src={skipImg} className={styles.scaleBackgroundSkipImage} alt="skipImage" />
+          {props.gameInfo.skip > 9 && (
+            <img src={skipImg} className={styles.scaleBackgroundSkipImage} alt="skipImage" />
+          )}
         </div>
       </div>
       <div className={styles.ratingScaleNaming}>

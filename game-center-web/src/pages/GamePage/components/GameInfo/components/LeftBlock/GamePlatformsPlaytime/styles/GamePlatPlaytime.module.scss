@@ -1,3 +1,17 @@
 .platforms__playtime {
   display: flex;
 }
+.averagePlaytime {
+  margin-left: 1rem;
+  font-size: 14px;
+  font-weight: 300;
+}
+.itemPlatforms {
+  display: flex;
+  & svg {
+    fill: #fff;
+    &:not(:last-child) {
+      margin-right: 0.7rem;
+    }
+  }
+}

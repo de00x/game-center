@@ -1,10 +1,11 @@
 import { ReactComponent as PlayYouTubeBtn } from './img/PlayYouTubeBtn.svg'
 import { IGameInfoVPlayerProps } from './types/GameInfoVPlayer.types'
 import { PlayerFullVideo } from '../../../../../../../components'
-import { FC, memo, useEffect, useRef, useState } from 'react'
 import styles from './styles/GameIVideoPlayer.module.scss'
 import { ReactComponent as Play } from './img/Play.svg'
 import { CSSTransition } from 'react-transition-group'
+import { GameIVideoPlayerService } from './services'
+import { FC, memo, useRef, useState } from 'react'
 import './styles/index.scss'
 
 const GameInfoVideoPlayer: FC<IGameInfoVPlayerProps> = ({ ...props }): JSX.Element => {
@@ -13,11 +14,9 @@ const GameInfoVideoPlayer: FC<IGameInfoVPlayerProps> = ({ ...props }): JSX.Eleme
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const videoPlayerRef: any = useRef()
 
-  useEffect(() => {
-    isPlayingVideo && urlPlayFullVideo === ''
-      ? videoPlayerRef.current.play()
-      : videoPlayerRef.current.pause()
-  }, [isPlayingVideo, urlPlayFullVideo])
+  /// useEffects ///
+  GameIVideoPlayerService.GetControlOverPlayer(urlPlayFullVideo, isPlayingVideo, videoPlayerRef)
+  /// useEffects ///
 
   return (
     <>

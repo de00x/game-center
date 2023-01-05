@@ -16,9 +16,9 @@ import {
   GameName,
 } from './components'
 import { FC, useState } from 'react'
+import { GameInfoService } from './services'
 import styles from './styles/GameInfo.module.scss'
 import { IIGameInfo } from './types/GameInfo.types'
-import GameInfoService from './services/GameInfo.service'
 
 export const GameInfo: FC = (): JSX.Element => {
   const [currentGameInfo, setCurrentGameInfo] = useState<IIGameInfo[]>([])
@@ -33,7 +33,7 @@ export const GameInfo: FC = (): JSX.Element => {
         <div className={styles.gameInfoContainer} key={gameInfo.id}>
           <div className={styles.gameInfoBlockLeft}>
             <CurrentDirectory gameName={gameInfo.name} />
-            <GamePlatformsPlaytime />
+            <GamePlatformsPlaytime gameInfo={gameInfo} />
             <GameName gameName={gameInfo.name} />
             <GameButtonsAddTo ratingMyGames={gameInfo.ratingMyGames} />
             <GameButtonsRating gameInfo={gameInfo} />
