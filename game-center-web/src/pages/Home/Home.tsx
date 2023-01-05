@@ -4,7 +4,7 @@ import HomeControllers from './services/HomeControllers'
 import { ReactComponent as Plus } from './img/Plus.svg'
 import { CSSTransition } from 'react-transition-group'
 import { SkeletonHome } from './components/Skeleton'
-import { Header, Sidebar } from '../../components'
+import { Header, PlayerFullVideo, Sidebar } from '../../components'
 import HomeService from './services/Home.service'
 import { IGameCard } from './types/Home.types'
 import styles from './styles/Home.module.scss'
@@ -16,7 +16,6 @@ import {
   ItemIMGPlatforms,
   PlayerBackground,
   PlayerPictures,
-  PlayFullVideo,
   PlayerVideo,
 } from './components'
 import { Link } from 'react-router-dom'
@@ -52,7 +51,7 @@ export const Home: FC = (): JSX.Element => {
                   timeout={700}
                   unmountOnExit
                 >
-                  <PlayFullVideo
+                  <PlayerFullVideo
                     urlPlayFullVideo={urlPlayFullVideo}
                     setUrlPlayFullVideo={setUrlPlayFullVideo}
                   />

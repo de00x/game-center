@@ -4,7 +4,7 @@ import styles from './styles/PlayFullVideo.module.scss'
 import ReactPlayer from 'react-player/youtube'
 import { FC } from 'react'
 
-export const PlayFullVideo: FC<IPlayFullVideoProps> = ({ ...props }) => {
+export const PlayerFullVideo: FC<IPlayFullVideoProps> = ({ ...props }) => {
   return (
     <div className={styles.fullVideoContainer}>
       <div className={styles.fullVideo}>
