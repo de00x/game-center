@@ -1,12 +1,13 @@
+import { IGameWebsiteProps } from './types/GameWebsite.types'
 import styles from './styles/GameWebsite.module.scss'
 import { FC, memo } from 'react'
 
-const GameWebsite: FC = (): JSX.Element => {
+const GameWebsite: FC<IGameWebsiteProps> = ({ ...props }): JSX.Element => {
   return (
     <>
       <div className={styles.websiteThisGameText}>Website</div>
       <div className={styles.websiteThisGameLink}>
-        <a href="https://www.bloodlines2.com" target={'_blank'} rel="noreferrer">
+        <a href={props.gameWebSite} target={'_blank'} rel="noreferrer">
           https://www.bloodlines2.com
         </a>
       </div>

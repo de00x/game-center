@@ -1,20 +1,21 @@
+import { IGameButtonsRatingProps } from './types/GameButtonsRating.types'
 import styles from './styles/GameButtonsRating.module.scss'
 import { FC, memo } from 'react'
 
-const GameButtonsRating: FC = () => {
+const GameButtonsRating: FC<IGameButtonsRatingProps> = ({ ...props }) => {
   return (
     <div className={styles.gameRating}>
       <div className={styles.categoryRating}>
-        <div>Exceptional</div>
-        <span>143 RATINGS</span>
+        <div>{props.gameInfo.categoryRating}</div>
+        <span>{props.gameInfo.categoryRatingNumber} RATINGS</span>
       </div>
       <div className={styles.categoryGenres}>
-        <div>#340</div>
-        <span>RPG</span>
+        <div>#{props.gameInfo.genresRatingNumber}</div>
+        <span>{props.gameInfo.categoryGenres}</span>
       </div>
       <div className={styles.totalRating}>
-        <div>#1</div>
-        <span>TOP 2023</span>
+        <div>#{props.gameInfo.totalRatingNumber}</div>
+        <span>{props.gameInfo.totalRatingName}</span>
       </div>
     </div>
   )

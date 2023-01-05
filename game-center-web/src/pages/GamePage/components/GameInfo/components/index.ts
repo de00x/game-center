@@ -1,8 +1,10 @@
+/// Left Block ///
 export { default as GameBtnsReviewComment } from './LeftBlock/GameBtnsReviewComment/GameBtnsReviewComment'
 export { default as GamePlatformsPlaytime } from './LeftBlock/GamePlatformsPlaytime/GamePlatformsPlaytime'
 export { default as GameSysRequirements } from './LeftBlock/GameSysRequirements/GameSysRequirements'
 export { default as GameButtonsRating } from './LeftBlock/GameButtonsRating/GameButtonsRating'
 export { default as GameButtonsAddTo } from './LeftBlock/GameButtonsAddTo/GameButtonsAddTo'
+export { default as CurrentDirectory } from './LeftBlock/CurrentDirectory/CurrentDirectory'
 export { default as GameRatingScale } from './LeftBlock/GameRatingScale/GameRatingScale'
 export { default as AboutTheGame } from './LeftBlock/AboutTheGame/AboutTheGame'
 export { default as GameWebsite } from './LeftBlock/GameWebsite/GameWebsite'

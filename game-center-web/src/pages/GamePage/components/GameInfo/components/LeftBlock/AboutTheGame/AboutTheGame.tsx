@@ -1,16 +1,18 @@
+import { IAboutTheGameProps } from './types/AboutTheGame.types'
 import styles from './styles/AboutTheGame.module.scss'
 import { FC, memo, useState } from 'react'
 
-const AboutTheGame: FC = (): JSX.Element => {
+const AboutTheGame: FC<IAboutTheGameProps> = ({ ...props }): JSX.Element => {
   const [aboutGameTextShowMore, setAboutGameTextShowMore] = useState(false)
 
   return (
     <div className={styles.aboutTheGame}>
       <div className={styles.aboutTheGameHeaderText}>About</div>
       <div className={styles.aboutTheGameText}>
-        Text about game less{!aboutGameTextShowMore && <span>...</span>}
+        {props.gameInfo.about}
+        {!aboutGameTextShowMore && <span>...</span>}
         {aboutGameTextShowMore && (
-          <span className={styles.aboutGameTextShowMore}>Text about game more</span>
+          <span className={styles.aboutGameTextShowMore}>{props.gameInfo.aboutMore}</span>
         )}
       </div>
       <span
@@ -23,30 +25,33 @@ const AboutTheGame: FC = (): JSX.Element => {
         <div className={styles.additInfoGameLeftBlock}>
           <div className={styles.additInfoGameHeader}>Platforms</div>
           <div className={styles.additInfoPlatforms}>
-            <span>PlayStation 5</span> <span>Xbox Series S/X</span> <span>PC</span>
-            <span>Xbox One</span> <span>PlayStation 4</span>
+            {props.gameInfo.allPlatforms.map((platform) => (
+              <span key={platform}>{platform}</span>
+            ))}
           </div>
           <div className={styles.additInfoGameHeader}>Release date</div>
           <div className={styles.additInfoReleaseDate}>
-            <span>Release Date</span>
+            <span>{props.gameInfo.release}</span>
           </div>
           <div className={styles.additInfoGameHeader}>Publisher</div>
           <div className={styles.additInfoPublisher}>
-            <span>Paradox Interactive</span>
+            <span>{props.gameInfo.publisher}</span>
           </div>
         </div>
         <div className={styles.additInfoGameRightBlock}>
           <div className={styles.additInfoGameHeader}>Genres</div>
           <div className={styles.additInfoGenres}>
-            <span>Action</span> <span>RPG</span>
+            {props.gameInfo.genres.map((genre) => (
+              <span key={genre}>{genre}</span>
+            ))}
           </div>
           <div className={styles.additInfoGameHeader}>Developer</div>
           <div className={styles.additInfoDeveloper}>
-            <span>Hardsuit Labs</span>
+            <span>{props.gameInfo.developer}</span>
           </div>
           <div className={styles.additInfoGameHeader}>Age rating</div>
           <div className={styles.additInfoAgeRating}>
-            <span>Not rated</span>
+            <span>{props.gameInfo.ageRating}</span>
           </div>
         </div>
       </div>

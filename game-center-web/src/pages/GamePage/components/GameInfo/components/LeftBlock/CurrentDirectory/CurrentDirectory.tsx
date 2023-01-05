@@ -1,8 +1,9 @@
+import { ICurrentDirectoryProps } from './types/CurrentDirectory.types'
 import styles from './styles/CurrentDirectory.module.scss'
 import { Link } from 'react-router-dom'
-import { FC } from 'react'
+import { FC, memo } from 'react'
 
-export const CurrentDirectory: FC = (): JSX.Element => {
+const CurrentDirectory: FC<ICurrentDirectoryProps> = ({ ...props }): JSX.Element => {
   return (
     <div className={styles.currentDirectory}>
       <Link to="/home">
@@ -13,7 +14,9 @@ export const CurrentDirectory: FC = (): JSX.Element => {
         <div>GAMES</div>
       </Link>
       <div>/</div>
-      <div>Vampire: The Masquerade - Bloodlines 2</div>
+      <div>{props.gameName}</div>
     </div>
   )
 }
+
+export default memo(CurrentDirectory)
