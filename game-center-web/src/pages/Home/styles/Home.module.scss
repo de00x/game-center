@@ -137,6 +137,15 @@
     }
   }
 }
+.btnLoadMoreDisabled {
+  & button {
+    background-color: rgba(34, 34, 34, 0.538);
+    &:hover {
+      color: #c5bfbf;
+      background-color: rgba(34, 34, 34, 0.538);
+    }
+  }
+}
 
 /// Media ///
 .mainContainer {

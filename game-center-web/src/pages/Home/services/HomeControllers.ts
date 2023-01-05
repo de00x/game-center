@@ -9,11 +9,15 @@ const HomeControllers = ({ ...props }: IHomeControllersProps) => {
       .then((res) => responseNextGamePage(res))
       .catch((err) => console.log('err', err))
     const responseNextGamePage = (res: AxiosResponse) => {
-      props.setGameCard([...props.gameCard, ...res.data])
-      localStorage.setItem('currentDownloadPage', '2')
+      props.setGameCard(res.data)
+      const prevLSDownloadPage = Number(localStorage.getItem('currentDownloadPage'))
+      const nextLSDownloadPage = String(prevLSDownloadPage + 1)
+      localStorage.setItem('currentDownloadPage', nextLSDownloadPage)
     }
   }
-  return { downloadNextGamePage }
+  const logicForButton = Number(localStorage.getItem('currentDownloadPage')) > 4
+
+  return { downloadNextGamePage, logicForButton }
 }
 
 export default HomeControllers

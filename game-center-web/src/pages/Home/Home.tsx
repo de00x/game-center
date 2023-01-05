@@ -1,10 +1,10 @@
+import { Header, PlayerFullVideo, Sidebar } from '../../components'
 import { ReactComponent as Wishlist } from './img/Wishlist.svg'
 import { ReactComponent as Ellipsis } from './img/Ellipsis.svg'
 import HomeControllers from './services/HomeControllers'
 import { ReactComponent as Plus } from './img/Plus.svg'
 import { CSSTransition } from 'react-transition-group'
 import { SkeletonHome } from './components/Skeleton'
-import { Header, PlayerFullVideo, Sidebar } from '../../components'
 import HomeService from './services/Home.service'
 import { IGameCard } from './types/Home.types'
 import styles from './styles/Home.module.scss'
@@ -12,11 +12,11 @@ import { FC, useState } from 'react'
 import './styles/index.scss'
 import cn from 'classnames'
 import {
-  AdditionalyInfoItem,
+  PlayerVideo,
+  PlayerPictures,
   ItemIMGPlatforms,
   PlayerBackground,
-  PlayerPictures,
-  PlayerVideo,
+  AdditionalyInfoItem,
 } from './components'
 import { Link } from 'react-router-dom'
 
@@ -31,7 +31,7 @@ export const Home: FC = (): JSX.Element => {
   /// useEffects ///
 
   /// controllers ///
-  const { downloadNextGamePage } = HomeControllers({ gameCard, setGameCard })
+  const { downloadNextGamePage, logicForButton } = HomeControllers({ gameCard, setGameCard })
   /// controllers ///
 
   return (
@@ -127,8 +127,14 @@ export const Home: FC = (): JSX.Element => {
               <SkeletonHome />
             )}
           </div>
-          <div className={styles.btnLoadMoreContainer}>
-            <button onClick={downloadNextGamePage}>Load more</button>
+          <div
+            className={cn(styles.btnLoadMoreContainer, {
+              [styles.btnLoadMoreDisabled]: logicForButton,
+            })}
+          >
+            <button disabled={logicForButton} onClick={downloadNextGamePage}>
+              Load more
+            </button>
           </div>
         </div>
       </div>
