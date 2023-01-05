@@ -1,6 +1,3 @@
-import styles from './styles/GameInfo.module.scss'
-import { IIGameInfo } from './types/GameInfo.types'
-import { FC, useEffect, useState } from 'react'
 import {
   GameBtnsReviewComment,
   GamePlatformsPlaytime,
@@ -18,18 +15,17 @@ import {
   GameWebsite,
   GameName,
 } from './components'
-import axios from 'axios'
+import { FC, useState } from 'react'
+import styles from './styles/GameInfo.module.scss'
+import { IIGameInfo } from './types/GameInfo.types'
+import GameInfoService from './services/GameInfo.service'
 
 export const GameInfo: FC = (): JSX.Element => {
   const [currentGameInfo, setCurrentGameInfo] = useState<IIGameInfo[]>([])
 
-  useEffect(() => {
-    const currentGamePageID = Number(localStorage.getItem('current-game-page-id'))
-    axios
-      .get(`/gameInfoPage/?currentInfoPage=${currentGamePageID}`)
-      .then((res) => setCurrentGameInfo(res.data))
-      .catch((err) => console.log('err', err))
-  }, [])
+  /// useEffects ///
+  GameInfoService.GetCurrentGamePageInfo(setCurrentGameInfo)
+  /// useEffects ///
 
   return (
     <>
@@ -49,7 +45,7 @@ export const GameInfo: FC = (): JSX.Element => {
           </div>
           <div className={styles.gameInfoBlockRight}>
             <GameInfoVideoPlayer gameInfo={gameInfo} />
-            <GameInfoPhotoAlbum />
+            <GameInfoPhotoAlbum photoAlbum={gameInfo.photoAlbum} />
             <EditTheGameInfo lastModified={gameInfo.lastModified} />
             <WhereToBuyGame gameInfo={gameInfo} />
             <GameContributors />

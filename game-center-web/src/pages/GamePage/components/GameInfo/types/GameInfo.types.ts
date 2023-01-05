@@ -21,6 +21,7 @@ export interface IIGameInfo {
   platforms: string[]
   recommended: number
   exceptional: number
+  photoAlbum: string[]
   lastModified: string
   ratingMyGames: number
   allPlatforms: string[]

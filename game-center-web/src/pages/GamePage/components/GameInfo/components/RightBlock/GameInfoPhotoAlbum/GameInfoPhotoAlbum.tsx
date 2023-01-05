@@ -1,22 +1,20 @@
+import { IGameIPhotoAlbumProps } from './types/GameIPhotoAlbum.types'
 import styles from './styles/GameIPhotoAlbum.module.scss'
 import { FC, memo } from 'react'
 
-const arrayPhotos = [
-  'https://i.ibb.co/NZT9184/bloodlines2.jpg',
-  'https://i.ibb.co/NZT9184/bloodlines2.jpg',
-  'https://i.ibb.co/NZT9184/bloodlines2.jpg',
-]
-
-const GameInfoPhotoAlbum: FC = (): JSX.Element => {
+const GameInfoPhotoAlbum: FC<IGameIPhotoAlbumProps> = ({ ...props }): JSX.Element => {
   return (
     <div className={styles.gameIPhotoAlbContainer}>
-      {arrayPhotos.map((photos, i) => (
-        <div className={styles.photoAlbumItem} key={i}>
+      {props.photoAlbum.slice(1, 4).map((photos) => (
+        <div className={styles.photoAlbumItem} key={photos}>
           <img src={photos} alt="photoAlbumItem" />
         </div>
       ))}
       <div className={styles.photoAlbumViewAll}>
-        <div className={styles.photoAlbumBGDimage} />
+        <div
+          className={styles.photoAlbumBGDimage}
+          style={{ backgroundImage: `url('${props.photoAlbum[5]}')` }}
+        />
         <span>...</span>
         <span>view all</span>
       </div>
