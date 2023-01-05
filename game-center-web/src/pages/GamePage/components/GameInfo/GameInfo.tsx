@@ -1,5 +1,5 @@
 import styles from './styles/GameInfo.module.scss'
-import { FC } from 'react'
+import { FC, useEffect } from 'react'
 import {
   GameBtnsReviewComment,
   GamePlatformsPlaytime,
@@ -16,8 +16,17 @@ import {
   GameWebsite,
   GameName,
 } from './components'
+import axios from 'axios'
 
 export const GameInfo: FC = (): JSX.Element => {
+  useEffect(() => {
+    const currentGamePageID = Number(localStorage.getItem('current-game-page-id'))
+    axios
+      .get(`/gameInfoPage/?currentInfoPage=${currentGamePageID}`)
+      .then((res) => console.log('res', res))
+      .catch((err) => console.log('err', err))
+  }, [])
+
   return (
     <div className={styles.gameInfoContainer}>
       <div className={styles.gameInfoBlockLeft}>

@@ -10,8 +10,8 @@ const arrayPhotos = [
 const GameInfoPhotoAlbum: FC = (): JSX.Element => {
   return (
     <div className={styles.gameIPhotoAlbContainer}>
-      {arrayPhotos.map((photos) => (
-        <div className={styles.photoAlbumItem} key={photos}>
+      {arrayPhotos.map((photos, i) => (
+        <div className={styles.photoAlbumItem} key={i}>
           <img src={photos} alt="photoAlbumItem" />
         </div>
       ))}

@@ -1,5 +1,5 @@
 {
-  "games-page-1": [
+  "all-games": [
     {
       "id": 1,
       "name": "Vampire: The Masquerade - Bloodlines 2",
@@ -292,9 +292,7 @@
       "genres": ["Adventure"],
       "chart": "#38 Top 2022",
       "logoImg": "https://i.ibb.co/vJ96ndR/The-Callisto-Protocol.jpg"
-    }
-  ],
-  "games-page-2": [
+    },
     {
       "id": 21,
       "name": "High on Life",
